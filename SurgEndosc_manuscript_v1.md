@@ -12,7 +12,7 @@ Jun Shu and Kai Zheng contributed equally to this work and are co-first authors.
 
 **\*Corresponding author:** Xin Wang, Department of General Surgery, Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital), Tongji Medical College, Huazhong University of Science & Technology, Wuhan 430016, Hubei Province, China. Email: wangxin@zgwhfe.com. Tel: +86 18995563848.
 
-**Word count:** Abstract 250 · Main text 3498
+**Word count:** Abstract 250 · Main text 3500
 **Tables:** 4 · **Figures:** 2 · **Supplementary material:** 5 tables, 2 figures
 **References:** 25
 
