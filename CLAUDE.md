@@ -42,8 +42,30 @@
   对审稿人是诚实，对分诊编辑等于代写拒稿理由。
 - **当前目标刊：Surgical Endoscopy**。选刊依据是文献 [23]（现 [14]）
   Zeng 2025 发在该刊，同病同术式同年龄段；本稿是「未按标志确认会怎样」的临床续篇。
-- Surg Endosc 版规格：摘要 250 词、正文 3500 词、4 表 2 图、25 条文献、补充 5 表 2 图。
-  **限额取自检索结果，Springer 站点在容器内被出口代理拦截，投稿前须在官网复核。**
+### Surg Endosc 官方投稿规定（已据官方 PDF「Instructions for Authors」2025-07 版核实）
+
+**此前一度采用的「摘要 250 / 正文 3500 / 图表 6 / 文献 35」是错的**——那组数字来自
+检索引擎串台（实为 *J Pediatr Endosc Surg* 与 Thieme 的 *Endoscopy* 的规定）。实际规定：
+
+| 项目 | 官方规定 | 本稿现状 |
+|---|---|---|
+| 摘要 | **≤300 词**，Background/Methods/Results/Conclusions | 250 词 ✅ |
+| 正文字数 | **无上限** | 3852 词 ✅ |
+| 图表数量 | **无上限**（只要求必要，同一结果不得图表并列）| 4 表 2 图 ✅ |
+| 参考文献 | **无上限**，须按引用顺序编号 | 25 条 ✅ |
+| 关键词 | ≤6 个 | 6 个 ✅ |
+| 短标题 | **≤40 字符** | 38 字符 ✅ |
+| 图片格式 | **uncompressed TIFF / GIF / JPEG / EPS**（PNG 不可）| 见 `make_submission_figures.py` |
+| 作者署名 | 须含各作者**最高学位**（MD/PhD 等）| ⚠️ **待补，作者需自行提供** |
+| 表格 | 每张单独上传，**不得嵌在正文里** | ⚠️ 投稿时需从 docx 拆出 |
+| 时间事件数据 | 官方要求用 Kaplan-Meier 曲线 | 本稿用 Aalen-Johansen CIF，
+  已在 §2.5 写明理由（存在死亡这一竞争事件，朴素 KM 会高估）|
+
+其它要点：正文顺序须为 Introduction / Materials and Methods / Results / Discussion /
+Acknowledgments / Disclosures / References / Figure legends；Disclosures 段**必须**写在
+正文内且与 ICMJE COI 表一致，否则退稿；投稿走 Editorial Manager
+(editorialmanager.com/send)；LLM 使用须在 Methods 声明（本稿已声明）。
+官方明确「鼓励同时给出绝对效应差及其置信区间」——正是本稿以风险差为主、OR 降级的写法。
 
 ### Surg Endosc 投稿文件
 
