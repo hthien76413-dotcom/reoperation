@@ -6,11 +6,11 @@
   B 所有分母是否属于本队列的合法分母集合（450/255/195/142/163/71/13/…）
   C 关键计数的加总：病因六类合计=再手术数；三个年龄段合计=队列数
 """
-import io, re, sys
+import io, sys, re, sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 import _dataprep as D
 
-MS = "JPS_manuscript_draft_v2.md"
+MS = sys.argv[1] if len(sys.argv) > 1 else "JPS_manuscript_draft_v2.md"
 t = io.open(MS, encoding="utf-8").read()
 
 d = D.load(); coh = set(d["malrot"]); first = d["first"]

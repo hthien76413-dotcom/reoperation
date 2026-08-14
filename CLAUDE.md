@@ -36,8 +36,23 @@
 
 ## 投稿状态
 
-- **JPS（Journal of Pediatric Surgery）已拒稿**
-- 稿件规格：摘要 244 词、正文 4990 词、4 表 2 图、25 条文献、补充 3 表 2 图
+- **JPS 已拒稿，且是编辑部直接拒（desk reject，未送外审）**。
+  这意味着问题出在标题、摘要与 cover letter，正文论证未被读到。
+  原 cover letter 以「预设比较阴性 / 分层是事后 / 结果对单个事件不稳健」三条开篇，
+  对审稿人是诚实，对分诊编辑等于代写拒稿理由。
+- **当前目标刊：Surgical Endoscopy**。选刊依据是文献 [23]（现 [14]）
+  Zeng 2025 发在该刊，同病同术式同年龄段；本稿是「未按标志确认会怎样」的临床续篇。
+- Surg Endosc 版规格：摘要 250 词、正文 3500 词、4 表 2 图、25 条文献、补充 5 表 2 图。
+  **限额取自检索结果，Springer 站点在容器内被出口代理拦截，投稿前须在官网复核。**
+
+### Surg Endosc 投稿文件
+
+| 文件 | 说明 |
+|---|---|
+| `SurgEndosc_manuscript_v1.md` | 正文（JPS 原稿保留不动）|
+| `Cover_letter_SurgEndosc.md` | 推介信，以新颖性与 Zeng 2025 的续篇关系开篇 |
+| `Supplementary_Material_SurgEndosc.md` | 已并入 S4/S5 的完整补充材料 |
+| `Supplementary_addendum_S4_S5.md` | S4/S5 源文件（改动后需重新并入）|
 
 ## 关键文件
 
@@ -52,16 +67,43 @@
 
 ## 核算与出图脚本
 
-- 数据准备：`_dataprep.py`（所有分析的公共入口）
+- 数据准备：`_dataprep.py`（所有分析的公共入口）、`_supplements.py`（补录 4 例缺失记录）
 - 数字核对：`full_number_audit.py`、`arith_audit.py`、`logic_checks.py`、`ref_audit.py`、`wordcount.py`
 - 主要分析：`stratified_analysis.py`、`planned_sensitivity.py`、`age_bimodal.py`、`age_sensitivity.py`
+- 影像核验：`imaging_validation.py`（见下）
+- 参考文献：`renumber_refs.py`（按首现顺序重编，`--check` 预览 / `--apply` 落盘）
 - 一致性：`kappa_6cat.py`、`mechanism_kappa.py`
 - 出图：`flow_figure.py`、`figure_duodenal_by_age.py`、`cif_english.py`、`figure_cause_by_approach.py`
 - 排版：`md2docx_v2.py`、`layout_manuscript.py`、`splice_tables.py`
 
-**改动正文数字后，务必重跑 `full_number_audit.py` 与 `wordcount.py`。**
+**改动正文数字后，务必重跑 `full_number_audit.py` 与 `wordcount.py`；
+改动引用后重跑 `ref_audit.py`，首现顺序若报 ★ 用 `renumber_refs.py` 修。**
+
+### 影像学核验的结论（`imaging_validation.py`）
+
+用术后影像这一独立数据源检验盲法机制学分类，**两条验证路径均为阴性**：
+
+- 造影表现区分不了「技术不彻底」与「术后粘连」（Fisher p=1.00），
+  螺旋状、弹簧征、圈变形等征象两组都出现
+- 首台→再手术时距也区分不了（限新生儿层 18 天 vs 19 天，p=1.00）；
+  全体 p=0.095 系年龄混杂所致，真实信号是年龄（≥1 岁 14 天 vs 新生儿 18.5 天，p=0.005）
+
+故机制分类仍只依赖手术记录文本这一单一来源，该软肋未能补上。
+
+**但有一个计划外的临床发现**：3 例技术不彻底中有 2 例，术后造影报十二指肠通过正常，
+其中一例造影阴性后仅 3 天再手术即发现膜状索带。即术后造影阴性不能排除首台 Ladd 不彻底——
+这反过来支持术中确认解剖标志。样本极小（可评造影 8 例），
+稿件中必须表述为病例系列观察，**不可写成敏感度或假阴性率**。
 
 ## 注意事项
 
 - 原始数据为患儿临床资料（`*.xlsx`），含敏感信息，**不得外传、不得贴入任何外部服务**。
-- 脚本里的 `PATH` 默认值多为作者本机 Windows 路径（`D:\全部肠旋转不良\...`），在本仓库运行时需用命令行参数传入实际文件名。
+- 脚本路径解析顺序已统一为：**环境变量 > 当前工作目录 > 作者本机 Windows 原路径**
+  （`MALROT_SRC` / `MALROT_ADJ` / `MALROT_LOST17`），故在仓库根目录可直接运行，
+  也不影响作者本机既有用法。`full_number_audit.py`、`arith_audit.py`、`ref_audit.py`
+  另支持把稿件路径作为命令行第一个参数传入。
+- 依赖：`openpyxl scipy pandas numpy`。`lifelines`（竞争风险 CIF）在本容器编译失败，
+  仅 `stratified_analysis.py` 与 `cif_english.py` 需要它。
+- **`logic_checks.py` 曾内含第四轮资格裁定之前的硬编码旧数字**（7/76、8/94），
+  且把「自动出院」误计为竞争事件；两处已于 2026-08-14 改为现算。
+  若再见到与稿件不符的数，先确认脚本口径是否过时。

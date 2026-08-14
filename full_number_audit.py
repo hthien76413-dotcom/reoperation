@@ -15,8 +15,12 @@ from scipy.stats import fisher_exact
 from scipy.stats.contingency import odds_ratio
 import _dataprep as D
 
-MS   = "JPS_manuscript_draft_v2.md"
-SUPP = "Supplementary_Material.md"
+# 稿件与补充材料路径可由命令行传入，便于对不同投稿版本各跑一遍：
+#   python3 full_number_audit.py [稿件.md] [补充材料.md]
+# 注意：本脚本的多数检查是「从原始数据重算 vs 硬编码期望值」，与稿件文本无关；
+# 少数检查用正则在稿件里找特定措辞，换稿后若报缺失，需人工确认是措辞改变还是数字丢失。
+MS   = sys.argv[1] if len(sys.argv) > 1 else "JPS_manuscript_draft_v2.md"
+SUPP = sys.argv[2] if len(sys.argv) > 2 else "Supplementary_Material.md"
 ms   = io.open(MS, encoding="utf-8").read()
 supp = io.open(SUPP, encoding="utf-8").read()
 
