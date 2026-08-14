@@ -102,8 +102,13 @@
   （`MALROT_SRC` / `MALROT_ADJ` / `MALROT_LOST17`），故在仓库根目录可直接运行，
   也不影响作者本机既有用法。`full_number_audit.py`、`arith_audit.py`、`ref_audit.py`
   另支持把稿件路径作为命令行第一个参数传入。
-- 依赖：`openpyxl scipy pandas numpy`。`lifelines`（竞争风险 CIF）在本容器编译失败，
-  仅 `stratified_analysis.py` 与 `cif_english.py` 需要它。
+- 依赖：`openpyxl scipy pandas numpy lifelines`（竞争风险 CIF，`stratified_analysis.py` 与
+  `cif_english.py` 需要）。`lifelines` 的间接依赖 `autograd-gamma` 用旧式 `setup.py`，在新版
+  setuptools 下会报 `AttributeError: install_layout`（纯打包元数据问题，非缺编译器）；
+  用 `SETUPTOOLS_USE_DISTUTILS=stdlib pip install lifelines` 即可装上。
+  会连带把 `pandas` 降到 2.3.x（`lifelines` 要求 `<3.0`），与稿件 Methods 所记版本一致。
+  `cif_english.py` 的 `savefig` 已加 `bbox_inches="tight"`（2026-08-14）：matplotlib 升到
+  3.11 后左对齐加粗标题的度量变化会把标题右侧裁掉，此参数只外扩画布、不改曲线或数据。
 - **`logic_checks.py` 曾内含第四轮资格裁定之前的硬编码旧数字**（7/76、8/94），
   且把「自动出院」误计为竞争事件；两处已于 2026-08-14 改为现算。
   若再见到与稿件不符的数，先确认脚本口径是否过时。

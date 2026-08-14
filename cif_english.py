@@ -117,8 +117,11 @@ ax.spines[["top", "right"]].set_visible(False)
 for sp in ("left", "bottom"):
     ax.spines[sp].set_color(AXIS); ax.spines[sp].set_linewidth(0.9)
 fig.tight_layout()
-fig.savefig("FigureS1_CIF_reoperation_EN.png", dpi=300, facecolor=SURFACE)
-fig.savefig("FigureS1_CIF_reoperation_EN.pdf", facecolor=SURFACE)  # 矢量版备投稿
+# 2026-08-14：升级到 matplotlib 3.11 后，左对齐加粗标题的度量变化导致标题右侧被裁
+# （旧版 matplotlib 下不裁）。bbox_inches="tight" 让画布按实际渲染范围外扩，
+# 不改变坐标轴、曲线或数据，只是不再裁切标题/图例的溢出部分。
+fig.savefig("FigureS1_CIF_reoperation_EN.png", dpi=300, facecolor=SURFACE, bbox_inches="tight")
+fig.savefig("FigureS1_CIF_reoperation_EN.pdf", facecolor=SURFACE, bbox_inches="tight")  # 矢量版备投稿
 
 # 报数：42 天 CIF 点估计
 for g in ["Laparoscopic", "Open-related"]:
