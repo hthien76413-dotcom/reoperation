@@ -1,9 +1,15 @@
 # Supplementary material — addendum for the *Surgical Endoscopy* submission
 
-> These two items carry the material removed from the main text when it was compressed to the
-> 3500-word limit. Nothing here is new: every sentence is taken verbatim, or condensed without
-> change of meaning, from `JPS_manuscript_draft_v2.md`. Splice S4 and S5 into
-> `Supplementary_Material.md` after Table S3, keeping Figures S1–S2 last.
+> S4, S5a, S5b and S5d carry the material removed from the main text when it was compressed to
+> the 3500-word limit; every sentence there is taken verbatim, or condensed without change of
+> meaning, from `JPS_manuscript_draft_v2.md`.
+>
+> **S5c is new work** — an analysis of the postoperative contrast studies, computed by
+> `imaging_validation.py` (output in `imaging_validation_out.txt`). It was undertaken to test
+> whether an independent data source could corroborate the blinded mechanism classification.
+> It could not; the negative result and the one incidental clinical finding are both reported.
+>
+> Splice S4 and S5 into `Supplementary_Material.md` after Table S3, keeping Figures S1–S2 last.
 
 ---
 
@@ -52,7 +58,30 @@ Cause-specific Cox regression was fitted censoring at the competing event, with 
 
 As a check on the taxonomy, we asked whether a coded intrinsic duodenal anomaly predicted category-1 obstruction. We could not detect such a relation, but the comparison is uninformative: 1 of 20 such children had a category-1 reoperation (5.0%) versus 11/430 (2.6%) of the rest (OR 2.00, 95% CI 0.04–15.2, p=0.42), a point estimate above unity resting on a single event. It is consistent with the intended separation but does not establish it. Three of the four missed-anomaly reoperations occurred in children with an intrinsic duodenal anomaly somewhere in their record, but anomaly coding draws on text from all admissions including the reoperation, so that association cannot be interpreted.
 
-### S5c. Full limitations
+### S5c. Postoperative contrast studies in the 12 duodenal reoperations
+
+Every imaging study performed between the index operation and the reoperation was retrieved from the radiology record (`imaging_validation.py`). All 12 children had imaging in that interval (31 studies after de-duplication: 19 plain radiographs, 11 ultrasound examinations, 1 computed tomogram). Eleven water-soluble contrast studies were performed, covering 8 of the 12 children — all 3 with a technically deficient index operation and 5 of the 9 with an adhesion mechanism.
+
+Each report was classified by whether it described impaired duodenal transit, using the explicit statement about contrast passage rather than the presence of morphological words, because "扩张" (dilated) appears both in positive statements and inside the negation "未见梗阻及扩张" (no obstruction or dilatation), and "显示不清" (poorly demonstrated) refers to image quality rather than obstruction.
+
+| Mechanism | Last contrast study | Report | Days before reoperation |
+|---|---|---|---|
+| Technical deficiency | POD 7 | no impaired transit | 10 |
+| Technical deficiency | POD 15 | no impaired transit | 3 |
+| Technical deficiency | POD 10 | impaired transit | 12 |
+| Adhesion | POD 12 | impaired transit | 2 |
+| Adhesion | POD 14 | impaired transit | 1 |
+| Adhesion | POD 6 | impaired transit | 10 |
+| Adhesion | POD 7 | duodenum not described | 12 |
+| Adhesion | POD 18 | morphology abnormal, transit preserved | 2 |
+
+Two of the three technically deficient operations were preceded by a contrast study reporting normal duodenal transit; in one, three days before an operation that found membranous bands still covering the descending and horizontal duodenum. Contrast appearance did not separate the two mechanisms (impaired transit reported in 1/3 technical and 3/5 adhesion cases; Fisher p=1.00), and the spiral and coil-spring signs were seen in both. With eight evaluable studies these are case-series observations, not estimates of sensitivity or of a between-mechanism difference.
+
+**Interval to reoperation did not separate the mechanisms either.** Median 18 days (17–22) after a technically deficient operation versus 15 days (10–20) after an adhesion mechanism (p=0.095), but that difference is confounded by age: all three technical cases were neonates. Restricted to neonates the two are indistinguishable (18 vs. 19 days, p=1.00). The interval instead separates the two *age* clusters: 14 days (10–15) in children aged ≥1 year versus 18.5 days in neonates (p=0.005).
+
+Taken together, neither imaging appearance nor timing provides an external check on the mechanism classification, which therefore continues to rest on the operative record alone (S5d, *Measurement*).
+
+### S5d. Full limitations
 
 *Ascertainment.* This is a single-center retrospective study spanning 13.5 years; a child reoperated elsewhere, or managed non-operatively for the same problem, would not be captured, so 8.0% is the reoperated fraction rather than the complication rate. Children discharged against medical advice, in whom reoperation elsewhere would be most likely, were traced by telephone; 22 of 24 were accounted for and none had been operated elsewhere. The 2 who could not be contacted were both open-related neonates; counting them as unobserved duodenal reoperations — the most adverse assumption — would move the neonatal comparison to 6/142 versus 2/163 (p=0.15).
 
