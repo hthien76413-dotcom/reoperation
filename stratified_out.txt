@@ -1,0 +1,93 @@
+==============================================================================
+Table 1（修正版：报标准化差值 SMD，不报基线 p 值）
+==============================================================================
+**Table 1.** Baseline characteristics by index surgical approach.
+
+| Characteristic | Overall (n=450) | Laparoscopic completion (n=255) | Open-related (n=195) | SMD\* |
+|---|---|---|---|---|
+| Male sex, n (%) | 344 (76.4) | 196 (76.9) | 148 (75.9) | +0.02 |
+| Age at index operation, months, median (IQR) | 0.2 (0.1–2.0) | 0.6 (0.2–22.0) | 0.1 (0.1–0.5) | **+0.76**† |
+| — Neonate (<28 days), n (%) | 305 (67.8) | 142 (55.7) | 163 (83.6) | **−0.64** |
+| — 28 days – 1 year, n (%) | 61 (13.6) | 42 (16.5) | 19 (9.7) | **+0.20** |
+| — ≥1 year, n (%) | 84 (18.7) | 71 (27.8) | 13 (6.7) | **+0.58** |
+| Bowel necrosis at index operation, n (%) | 55 (12.2) | 6 (2.4) | 49 (25.1) | **−0.70** |
+
+\* Standardized mean difference (laparoscopic completion minus open-related), with values of |SMD| ≥ 0.10 shown in bold. We report SMDs rather than p values because the two groups are not samples from a common population and no null hypothesis of equal baseline distributions is of interest here; the SMD quantifies the size of the imbalance that the analysis must contend with, independently of sample size. Age was taken from the earliest admission record for each child. Necrosis is shown as a marker of index-operation severity, not a baseline demographic.
+† Age is strongly right-skewed, so its SMD is computed on the log(days + 1) scale; the median and IQR are shown untransformed, in months.
+
+==============================================================================
+Table 2（补精确 CI 与 Holm）
+==============================================================================
+**Table 2.** Cause of unplanned reoperation, overall and by index approach.
+
+| Cause (adjudicated, single choice) | Overall (n=36) | Lap (n=24) | Open-related (n=12) | Rate, lap vs. open-related | OR (exact 95% CI) | p\* | Holm-adjusted p |
+|---|---|---|---|---|---|---|---|
+| 1. Persistent duodenal obstruction (no intrinsic lesion) | 12 (33.3%) | 12 | 0 | **4.7% vs. 0.0%** | **NE (≥2.19)** | **0.0016** | **0.010** |
+| 2. Necrosis / perforation / anastomotic complication | 8 (22.2%) | 2 | 6 | 0.8% vs. 3.1% | 0.25 (0.02–1.4) | 0.0821 | 0.411 |
+| 3. Adhesive obstruction (non-duodenal) | 5 (13.9%) | 4 | 1 | 1.6% vs. 0.5% | 3.09 (0.30–153.0) | 0.3944 | 1.000 |
+| 4. Missed associated anomaly† | 4 (11.1%) | 3 | 1 | 1.2% vs. 0.5% | 2.31 (0.18–121.9) | 0.6367 | 1.000 |
+| 5. Recurrent volvulus / redo-Ladd | 2 (5.6%) | 2 | 0 | 0.8% vs. 0.0% | NE (≥0.14) | 0.5078 | 1.000 |
+| 6. Other‡ | 5 (13.9%) | 1 | 4 | 0.4% vs. 2.1% | 0.19 (0.00–1.9) | 0.1713 | 0.685 |
+| **Obstructive causes combined (1+3+5)** | **19 (52.8%)** | 18 | 1 | 7.1% vs. 0.5% | — | — | — |
+
+\* Fisher exact test on rates with the full cohort as the denominator (255 laparoscopic, 195 open-related); odds ratios with conditional exact (Cornfield) 95% confidence intervals. Holm's step-down correction is applied across the six cause-specific comparisons. No open-related child had a persistent duodenal obstruction, so that odds ratio is not estimable and only the one-sided lower bound is informative; the comparison rests on 12 events. The cause-specific comparison for persistent duodenal obstruction is confounded by age and is presented stratified in Table 3.
+† Coexisting malformation first identified or confirmed at reoperation: duodenal membrane 3, multiple jejunal atresia 1.
+‡ Wound dehiscence 2, stress-ulcer bleeding 2, stoma prolapse 1.
+
+==============================================================================
+新 Table 3：按年龄分层
+==============================================================================
+**Table 3.** Persistent duodenal obstruction and overall unplanned reoperation, stratified by age at the index operation.
+
+| Age stratum | Outcome | Laparoscopic completion | Open-related | OR (exact 95% CI) | p\* |
+|---|---|---|---|---|---|
+| Neonate (<28 days) | Persistent duodenal obstruction | 6/142 (4.2%) | 0/163 (0.0%) | NE (≥1.38) | 0.010 |
+|  | Any unplanned reoperation | 15/142 (10.6%) | 9/163 (5.5%) | 2.02 (0.80–5.4) | 0.135 |
+| 28 days – 1 year | Persistent duodenal obstruction | 0/42 (0.0%) | 0/19 (0.0%) | NE (—) | — |
+|  | Any unplanned reoperation | 0/42 (0.0%) | 3/19 (15.8%) | 0.00 (0.00–1.0) | 0.027 |
+| ≥1 year | Persistent duodenal obstruction | 6/71 (8.5%) | 0/13 (0.0%) | NE (≥0.21) | 0.584 |
+|  | Any unplanned reoperation | 9/71 (12.7%) | 0/13 (0.0%) | NE (≥0.36) | 0.343 |
+
+\* Fisher exact test; conditional exact (Cornfield) 95% confidence intervals. Applying Holm's correction across the three age strata for persistent duodenal obstruction leaves the neonatal comparison significant (adjusted p=0.029); if all six stratum-by-outcome comparisons in this table are treated as one family, the adjusted p becomes 0.058 and no longer falls below 0.05. We report both so that either family definition can be applied. Mantel–Haenszel odds ratio for persistent duodenal obstruction pooled across the three age strata = **not estimable (no open-related event in any stratum)**, showing that part of the crude association is attributable to age: children aged ≥1 year had both a higher background rate of duodenal-type reoperation and a much higher probability of being operated laparoscopically.
+
+14 例十二指肠持续梗阻的年龄（天）：[3, 3, 7, 7, 7, 10, 2399, 2585, 2750, 3762, 4156, 4795]
+
+==============================================================================
+Table 4（总体率 + 校正/敏感性，Firth 已修正）
+==============================================================================
+[还原资格裁定·十二指肠持续梗阻] lap 13/260 (5.0%) vs open-rel 1/208 (0.5%)  Fisher p=0.0046
+**Table 4.** Overall unplanned reoperation rate by index approach, with adjusted and sensitivity analyses.
+
+| Analysis | Estimate | 95% CI | p |
+|---|---|---|---|
+| Laparoscopic completion | 24/255 (9.4%) | 6.4–13.6 | — |
+| Conversion to open | 6/53 (11.3%) | 5.3–22.6 | — |
+| Open | 6/142 (4.2%) | 2.0–8.9 | — |
+| **All children** | 36/450 (8.0%) | 5.8–10.9 | — |
+| Crude, laparoscopic vs. open-related | OR 1.58 | 0.74–3.6 (exact) | 0.224 |
+| *Heterogeneity within the comparator:* conversion vs. open | 11.3% vs. 4.2% | 0.73–11.3 (exact) | 0.091 |
+| Competing-risk cumulative incidence at 42 days | 9.4% vs. 6.2% | — | — |
+| Cause-specific Cox (competing event censored) | HR 1.41 | 0.71–2.82 | 0.331 |
+| Firth, unadjusted | OR 1.55 | 0.76–3.16 | 0.215 |
+| Firth + neonate (<28 days) + index necrosis | OR 1.64 | 0.75–3.60 | 0.209 |
+| Firth + age band + index necrosis | OR 1.59 | 0.72–3.49 | 0.246 |
+| Mantel–Haenszel, stratified by age band | OR 1.54 | 0.74–3.24 | — |
+| Intention-to-treat (conversions grouped with laparoscopic) | OR 2.45 | 0.97–7.4 (exact) | 0.060 |
+| Era effect within laparoscopic group (≤2017 vs. >2017) | 10.0% vs. 8.8% | — | 0.832 |
+| Counting planned staged reoperations as outcomes | OR 1.48 (28/255 vs. 15/195) | 0.74–3.1 (exact) | 0.261 |
+| Reverting the fourth-pass eligibility exclusions (n=468) | OR 1.47 (25/260 vs. 14/208) | 0.71–3.2 (exact) | 0.314 |
+| Firth + index year | OR 1.49 | 0.73–3.06 | 0.269 |
+
+Wilson 95% confidence intervals for proportions; conditional exact (Cornfield) intervals for odds ratios. Firth penalized-likelihood logistic regression with p values from the penalized likelihood-ratio test, obtained by constraining the coefficient of interest to zero within the full design matrix; its 95% confidence intervals are Wald-type, from the penalized-likelihood standard error, and under (quasi-)complete separation need not agree with the likelihood-ratio p-value (see the adjusted models below). The competing event occurred only after open-related surgery (16 deaths versus none after laparoscopic completion), so its cause-specific hazard ratio is not estimable; this is why a competing-risk framework was used. The comparator is not internally homogeneous: children converted to open had a higher reoperation rate than those operated open from the outset, and the intention-to-treat row moves exactly this subgroup. Every analysis of the **overall** rate is null; the cause-specific and age-stratified findings are in Tables 3 and 4. Adjusted models for persistent duodenal obstruction are given below.
+
+**Adjusted models for persistent duodenal obstruction** (Firth penalized likelihood, laparoscopic vs. open-related):
+
+| Model | OR | 95% CI | p |
+|---|---|---|---|
+| Unadjusted | 20.07 | 1.17–343.61 | 0.001 |
+| + neonate (<28 days) | 18.92 | 1.12–318.53 | 0.002 |
+| + neonate + index necrosis | 16.22 | 1.18–222.70 | 0.006 |
+| + log(age in days) + index necrosis | 12.62 | 0.90–177.55 | 0.020 |
+| + age band + index necrosis | 14.88 | 1.11–199.78 | 0.009 |
+
+Adjustment for age attenuates the estimate (from OR 20.1 unadjusted to 12.6–18.9 adjusted), because age predicts both the outcome and the choice of approach. These are penalized estimates under complete separation—no open-related child had this outcome—so they should be read as evidence of direction, not as effect sizes: the confidence intervals span more than two orders of magnitude, and one of them includes unity despite a penalized likelihood-ratio p below 0.05—expected here because the table's confidence intervals are Wald-type from the penalized-likelihood standard error rather than profile-likelihood intervals matched to that same test, and the two need not agree under separation. The age-stratified analysis in Table 3 shows where the association actually lies.

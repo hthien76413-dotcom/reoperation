@@ -1,0 +1,21 @@
+十二指肠持续梗阻 机制核阅（A/B/C/D）—— 评者间一致性
+==================================================================
+n=14，类别=['A', 'C']
+观察符合率 Po = 100.0% (14/14)，Wilson 95%CI 78.5%–100.0%
+Cohen's κ = 1.000，pe=0.663
+  ⚠ 完全一致时 κ 的正态近似 SE=0，区间退化为 1.00–1.00，不可作为精度陈述；报观察符合率的 Wilson 区间。
+PABAK = 1.000  （类别数按 2 计）
+
+混淆矩阵（行=评者1，列=评者2），顺序 ['A', 'C']：
+  A: A=3  C=0
+  C: A=0  C=11
+
+分歧 0 例：
+
+两人一致的机制分布：
+  {'A': 3, 'C': 11}
+
+可写进 Methods 2.4 的表述：
+  Mechanism was assigned independently by a second reviewer, blinded to index approach,
+  from operative narratives with all abdominal-access wording masked and case order
+  randomised; the two readers agreed on all 14 (100%; Wilson 95% CI 78.5–100%), κ=1.00.

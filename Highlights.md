@@ -1,0 +1,5 @@
+- Unplanned reoperation occurred within 42 days in 8.0% after a primary Ladd procedure.
+- We detected no difference in the overall reoperation rate between approaches.
+- Persistent duodenal obstruction fell into two separated age clusters.
+- No open-related child had one; neonatal risk difference 4.2 points (95% CI 1.0–8.9).
+- Beyond one year, duodenal reoperation reached 8.5% after laparoscopy, all adhesive.
