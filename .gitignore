@@ -1,3 +1,7 @@
 # 投稿用 TIFF 由 make_submission_figures.py 从 PNG 转出，体积大且可复现，不入库
 *.tif
 *.tiff
+
+# Python 字节码缓存
+__pycache__/
+*.pyc
