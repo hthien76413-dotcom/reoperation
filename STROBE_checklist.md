@@ -8,7 +8,7 @@ Section references are to the numbered sections of the submitted manuscript. Whe
 |---|---|---|
 | **Title and abstract** | | |
 | 1 (a) | Indicate the study's design with a commonly used term in the title or the abstract | **Title page** ("Article type: Observational study (retrospective cohort study)"); **Abstract, Methods** ("Single-center retrospective cohort of 450 children…") |
-| 1 (b) | Provide in the abstract an informative and balanced summary of what was done and what was found | **Structured Abstract** (250 words). Cause-specific and mechanism findings are given first, the null overall comparison last; the age stratification is labelled *post hoc*; the odds ratio is explicitly flagged as not estimable rather than omitted |
+| 1 (b) | Provide in the abstract an informative and balanced summary of what was done and what was found | **Structured Abstract** (259 words). Cause-specific and mechanism findings are given first, the null overall comparison last; the age stratification is labelled *post hoc*; the odds ratio is explicitly flagged as not estimable rather than omitted |
 | **Introduction** | | |
 | 2 | Explain the scientific background and rationale for the investigation being reported | **§1**, paragraphs 1–3 |
 | 3 | State specific objectives, including any prespecified hypotheses | **§1**, final paragraph, objectives (i)–(iii). The same paragraph states explicitly that the age-stratified analysis **was not part of this plan** |
