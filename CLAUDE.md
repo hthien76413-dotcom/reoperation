@@ -72,15 +72,20 @@ Acknowledgments / Disclosures / References / Figure legends；Disclosures 段**�
 | 上传项 | 文件 | 生成方式 |
 |---|---|---|
 | 主文件 | `SurgEndosc_submission_maintext.docx` | `make_submission_files.py` |
-| 表格 ×4 | `SurgEndosc_Table1..4.docx` | 同上 |
+| 正文表格 ×4 | `SurgEndosc_Table1..4.docx` | 同上 |
 | 图 ×4 | `*.tif`（uncompressed TIFF）| `make_submission_figures.py`（.tif 已 gitignore）|
-| 补充材料 | `Supplementary_Material_SurgEndosc.docx` | `md2docx_v2.py` |
+| 补充材料核心 | `SurgEndosc_submission_supplement.docx`（S1/S2/S3/图注/图，不含 S4/S5）| `make_submission_supplement.py` |
+| 补充表格 S4 | `SurgEndosc_SupplementaryTableS4.docx` | 同上 |
+| 补充表格 S5 | `SurgEndosc_SupplementaryTableS5.docx`（含 S5a–d）| 同上 |
 | 推介信 | `Cover_letter_SurgEndosc.docx` | `md2docx_v2.py` |
 | STROBE 清单 | `STROBE_checklist.docx` | 已有 |
 | ICMJE COI 表 | 每位作者一份 | ⚠️ 需作者自行下载填写 |
 
-**改动 `SurgEndosc_manuscript_v1.md` 后，务必重跑 `make_submission_files.py`，
-否则上传的主文件与表格会与主稿脱节。**
+**改动 `SurgEndosc_manuscript_v1.md` 后，务必重跑 `make_submission_files.py`；
+改动 `Supplementary_Material_SurgEndosc.md` 后，务必重跑 `make_submission_supplement.py`——
+否则拆分出的投稿文件会与来源脱节。** 两个来源文件（正文/补充材料）都保持【含全部
+表格/S4/S5 的完整版】，方便阅读与核对；拆分只在生成投稿文件这一步发生，不产生
+第二份需要手动同步的源文件。
 
 ### Surg Endosc 投稿文件
 
@@ -88,8 +93,8 @@ Acknowledgments / Disclosures / References / Figure legends；Disclosures 段**�
 |---|---|
 | `SurgEndosc_manuscript_v1.md` | 正文（JPS 原稿保留不动）|
 | `Cover_letter_SurgEndosc.md` | 推介信，以新颖性与 Zeng 2025 的续篇关系开篇 |
-| `Supplementary_Material_SurgEndosc.md` | 已并入 S4/S5 的完整补充材料 |
-| `Supplementary_addendum_S4_S5.md` | S4/S5 源文件（改动后需重新并入）|
+| `Supplementary_Material_SurgEndosc.md` | 补充材料完整来源（含 S1–S5 全部，改动只在这里改）|
+| `Supplementary_addendum_S4_S5.md` | S4/S5 历史来源文件，已被上面的完整来源取代，保留供追溯 |
 
 ## 关键文件
 
