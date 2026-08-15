@@ -22,7 +22,7 @@ A second result may interest your readers as much. All nine adhesion-mechanism c
 
 **Limitations, which we state plainly in the manuscript.** The study is single-center and retrospective; the age stratification was post hoc and its cut-points data-driven; and the neonatal comparison rests on six events against a zero cell, so the odds ratio is not estimable and the result is not robust to a single unobserved competing event. We report each of these in the paper rather than leaving them to a reviewer, and we present the comparison as hypothesis-generating for a prospective multicenter study — not as a case against laparoscopy, whose patients here were a systematically less severe group.
 
-The manuscript is 4204 words of main text with a 250-word structured abstract, 4 tables, 2 figures, and supplementary material comprising 5 tables and 2 figures. It is reported in accordance with STROBE; the completed checklist accompanies this submission.
+The manuscript is 4197 words of main text with a 259-word structured abstract, 4 tables, 2 figures, and supplementary material comprising 5 tables and 2 figures. It is reported in accordance with STROBE; the completed checklist accompanies this submission.
 
 We confirm that this work is original, unpublished, and not under consideration elsewhere; that all authors have approved the submission; that the study was approved by the Ethics Committee of Wuhan Children's Hospital (approval no. 2026R018-E01) with informed consent waived owing to the retrospective design; that the authors have no conflicts of interest; and that the study received no specific funding. Jun Shu and Kai Zheng contributed equally and are listed as co-first authors.
 
