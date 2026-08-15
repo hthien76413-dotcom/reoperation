@@ -1,5 +1,10 @@
 # Supplementary material — addendum for the *Surgical Endoscopy* submission
 
+> **⚠ 已废弃 / SUPERSEDED.** 本文件是 S4/S5 的历史来源，其内容（含下文的
+> "3500-word limit"）反映的是当时的旧认知，现已被订正。当前唯一的补充材料
+> 编辑来源是 `Supplementary_Material_SurgEndosc.md`（含 S1–S5 全部内容），
+> 一切改动都应在那份文件里做；本文件仅保留供追溯，不再维护、不再使用。
+
 > S4, S5a, S5b and S5d carry the material removed from the main text when it was compressed to
 > the 3500-word limit; every sentence there is taken verbatim, or condensed without change of
 > meaning, from `JPS_manuscript_draft_v2.md`.
