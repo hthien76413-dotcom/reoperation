@@ -14,7 +14,7 @@ Jun Shu and Kai Zheng contributed equally to this work and are co-first authors.
 
 **\*Corresponding author:** Xin Wang, MD, Department of General Surgery, Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital), Tongji Medical College, Huazhong University of Science & Technology, Wuhan 430016, Hubei Province, China. Email: wangxin@zgwhfe.com. Tel: +86 18995563848.
 
-**Word count:** Abstract 250 · Main text 4031
+**Word count:** Abstract 250 · Main text 4069
 **Tables:** 4 · **Figures:** 2 · **Supplementary material:** 5 tables, 2 figures
 **References:** 25
 
@@ -50,7 +50,7 @@ Recent work has begun to define anatomical landmarks confirming that each step o
 Single-center retrospective cohort study at Wuhan Children’s Hospital, a tertiary hospital, reported per STROBE [15], covering December 2012 to June 2026. The study was not registered in a public study registry. The institutional ethics committee approved the study (no. 2026R018-E01) and waived informed consent.
 
 ### 2.2 Participants
-The institutional intestinal-malrotation database contained 499 children with an operative record. The index operation was the earliest primary Ladd-type operation recorded, identified by searching the Chinese-language procedure name and coded diagnosis for five terms denoting the Ladd procedure, derotation, intestinal rotation, the midgut, and malrotation (Supplementary Table S2). Because the earliest recorded operation is not always the first Ladd procedure, every record whose earliest operation was a diagnostic endoscopy or biopsy, or whose coded diagnosis indicated a previous repair, was adjudicated case by case (§2.4); 19 were reviewed, 18 excluded, and in 3 the index operation was corrected to a later date. No child was excluded for age (oldest 14.2 years). The final cohort was 450 children (Figure 1); no a priori sample-size calculation was performed.
+The institutional intestinal-malrotation database contained 499 children with an operative record. The index operation was the earliest primary Ladd-type operation recorded, identified by searching the Chinese-language procedure name and coded diagnosis for five terms denoting the Ladd procedure, derotation, intestinal rotation, the midgut, and malrotation (Supplementary Table S2). Because the earliest recorded operation is not always the first Ladd procedure, every record whose earliest operation was a diagnostic endoscopy or biopsy, or whose coded diagnosis indicated a previous repair, was adjudicated case by case (§2.4); 19 were reviewed and 18 excluded. Separately, in 3 children whose earliest recorded operation was a preliminary procedure on the same admission, the index date was corrected to the nearby operation that was unambiguously the primary Ladd; only one of these three coincided with the 19-child review, and that child was excluded rather than retained. No child was excluded for age (oldest 14.2 years). The final cohort was 450 children (Figure 1); no a priori sample-size calculation was performed.
 
 ### 2.3 Variables and definitions
 *Exposure (index approach)* was *laparoscopic completion*, *conversion to open*, or *open*, assigned for all 450 children by a keyword rule applied to the procedure name and operative narrative, as was index bowel necrosis; both rules are given verbatim in Supplementary Table S2 and were validated against blinded reviewer consensus (§2.4). “Open-related” denotes conversion plus open.
