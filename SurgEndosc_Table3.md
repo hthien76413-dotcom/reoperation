@@ -2,7 +2,7 @@
 
 | Age stratum | Outcome | Laparoscopic completion | Open-related | OR (exact 95% CI) | p\* |
 |---|---|---|---|---|---|
-| Neonate (<28 days) | Persistent duodenal obstruction | 6/142 (4.2%) | 0/163 (0.0%) | NE (≥1.38) | 0.010 |
+| Neonate (<28 days) | Persistent duodenal obstruction | 6/142 (4.2%) | 0/163 (0.0%) | NE (≥1.38) | 0.010§ |
 |  | Any unplanned reoperation | 15/142 (10.6%) | 9/163 (5.5%) | 2.02 (0.80–5.4) | 0.135 |
 | 28 days – 1 year | Persistent duodenal obstruction | 0/42 (0.0%) | 0/19 (0.0%) | NE (—) | — |
 |  | Any unplanned reoperation | 0/42 (0.0%) | 3/19 (15.8%) | 0.00 (0.00–1.0) | 0.027 |
