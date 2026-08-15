@@ -16,11 +16,13 @@
 
 输出：kappa_6cat_report.txt
 """
-import io, math, openpyxl
+import io, math, os, openpyxl
 
-DIR = r"D:\全部肠旋转不良\③肠旋转不良术后再手术"
-FILES = {"评者1": (DIR + r"\裁定表_评者1.xlsx", "评者1_再手术原因"),
-         "评者2": (DIR + r"\裁定表_评者2.xlsx", "评者2_再手术原因")}
+_WIN_DIR = r"D:\全部肠旋转不良\③肠旋转不良术后再手术"
+def _resolve(name):
+    return name if os.path.exists(name) else os.path.join(_WIN_DIR, name)
+FILES = {"评者1": (_resolve("裁定表_评者1.xlsx"), "评者1_再手术原因"),
+         "评者2": (_resolve("裁定表_评者2.xlsx"), "评者2_再手术原因")}
 
 def s(v): return "" if v is None else str(v).strip()
 
@@ -98,6 +100,6 @@ log("      『合并/漏诊畸形≠无』且『首次是否已知=否-漏诊』
 log("      故上述『现行六分类』κ 反映的是真实的评者间一致性，而非事后重编码的产物。")
 
 out = "\n".join(L)
-io.open(DIR + r"\kappa_6cat_report.txt", "w", encoding="utf-8").write(out)
+io.open("kappa_6cat_report.txt", "w", encoding="utf-8").write(out)
 try: print(out)
 except UnicodeEncodeError: print(out.encode("gbk", "replace").decode("gbk"))

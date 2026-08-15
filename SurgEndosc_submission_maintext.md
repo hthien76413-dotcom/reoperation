@@ -79,7 +79,7 @@ Cause-specific and overall rates were compared with Fisher exact test, using Wil
 
 The age-stratified analysis was **not prespecified**; it was prompted by the bimodal ages of the 12 duodenal-obstruction reoperations and by the recognition that age predicts both outcome and approach. We report it alongside the unstratified estimate, not in place of it; no formal age-by-approach interaction test was performed (§4). Because the principal comparison is null, we report the risk difference with its confidence interval and the study's power, so that it is read as a bounded absence of evidence rather than as equivalence.
 
-Sex was analysed as a reporting variable throughout: cohort composition, the primary outcome, and the principal cause-specific comparison are each reported separately for boys and girls (§3.8). Sex, age, index operation date, and index approach were complete for all 450 children. Text used for keyword ascertainment of associated anomalies was unavailable for 7/450 (1.6%); these were imputed as anomaly-absent, biasing anomaly-related associations toward the null. Analyses used Python 3.13 (NumPy 2.5, SciPy 1.18, pandas 2.3, lifelines 0.30).
+Sex was analysed as a reporting variable throughout: cohort composition, the primary outcome, and the principal cause-specific comparison are each reported separately for boys and girls (§3.8). Sex, age, index operation date, and index approach were complete for all 450 children. Text used for keyword ascertainment of associated anomalies was unavailable for 6/450 (1.3%); these were imputed as anomaly-absent, biasing anomaly-related associations toward the null. Analyses used Python 3.13 (NumPy 2.5, SciPy 1.18, pandas 2.3, lifelines 0.30).
 
 ## 3. Results
 

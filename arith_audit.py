@@ -31,6 +31,13 @@ for b in ("neo", "inf", "big"):
 legit |= {sum(1 for p in R if ap[p] == L), sum(1 for p in R if ap[p] != L)}
 legit |= {20, 430, 53, 161, 132, 128, 99, 226, 90, 136, 121, 19, 18, 16, 12, 9, 6, 3, 4, 2, 1}  # 文献引用与裁定计数
 
+# 性别（§3.8）：队列/两术式臂 各按男女拆分
+sex = d["sex"]
+MALE = "男性"
+for grp in (coh, {p for p in coh if ap[p] == L}, {p for p in coh if ap[p] != L}):
+    legit |= {sum(1 for p in grp if sex.get(p) == MALE),
+              sum(1 for p in grp if sex.get(p) != MALE)}
+
 bad_pct, bad_den = [], []
 for m in re.finditer(r"(\d+)\s*/\s*(\d+)\s*\((\d+(?:\.\d+)?)%\)", t):
     a, b, pct = int(m.group(1)), int(m.group(2)), float(m.group(3))
