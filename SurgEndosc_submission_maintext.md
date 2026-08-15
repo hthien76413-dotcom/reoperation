@@ -1,22 +1,24 @@
 ## Title Page
 
+**Article type:** Observational study (retrospective cohort study)
+
 **Title:** Early Unplanned Reoperation After Laparoscopic Versus Open Ladd Procedure: Adjudicated Cause and Mechanism in 450 Children
 
 **Short title:** Early reoperation after Ladd procedure
 
-**Authors:** Jun Shu, Kai Zheng, Hongqiang Bian, Jun Yang, Xin Wang\*
+**Authors:** Jun Shu, MD; Kai Zheng, MD; Hongqiang Bian, MD; Jun Yang, MD; Xin Wang, MD\*
 
 **Affiliation (all authors):** Department of General Surgery, Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital), Tongji Medical College, Huazhong University of Science & Technology, Wuhan 430016, Hubei Province, China
 
 Jun Shu and Kai Zheng contributed equally to this work and are co-first authors.
 
-**\*Corresponding author:** Xin Wang, Department of General Surgery, Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital), Tongji Medical College, Huazhong University of Science & Technology, Wuhan 430016, Hubei Province, China. Email: wangxin@zgwhfe.com. Tel: +86 18995563848.
+**\*Corresponding author:** Xin Wang, MD, Department of General Surgery, Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital), Tongji Medical College, Huazhong University of Science & Technology, Wuhan 430016, Hubei Province, China. Email: wangxin@zgwhfe.com. Tel: +86 18995563848.
 
-**Word count:** Abstract 250 · Main text 4021
+**Word count:** Abstract 250 · Main text 4031
 **Tables:** 4 · **Figures:** 2 · **Supplementary material:** 5 tables, 2 figures
 **References:** 25
 
-**Keywords:** intestinal malrotation; Ladd procedure; laparoscopy; reoperation; duodenal obstruction; neonate
+**Funding:** This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 
 <!--pagebreak-->
 ## Structured Abstract
@@ -28,6 +30,8 @@ Jun Shu and Kai Zheng contributed equally to this work and are co-first authors.
 **Results:** Reoperation occurred in 36/450 (8.0%), 67% on days 8–21 (median 14.5 days). Persistent duodenal obstruction was the commonest cause (12/36, 33.3%); it followed 12/255 (4.7%) laparoscopic completions and no open-related operation (risk difference +4.7%, 95% CI 1.9–8.0; Holm p=0.010); the odds ratio is not estimable. On blinded re-review, 9/12 were periduodenal adhesion and 3/12 a technical deficiency—residual bands, a 2-cm mesenteric base, a kinked duodenum—all three neonatal and laparoscopic. Cases clustered at 4–11 days and 6.6–13.1 years, none between; in neonates the risk difference was 4.2% (95% CI 1.0–8.9; 6/142 vs. 0/163). Overall rates did not differ (9.4% vs. 6.2%; risk difference +3.3%, 95% CI −2.0 to +8.2).
 
 **Conclusions:** Overall rates were similar between approaches; the reason for returning to theater was not. Duodenal mobilization during neonatal laparoscopic Ladd warrants deliberate intraoperative confirmation and prospective study.
+
+**Keywords:** intestinal malrotation; Ladd procedure; laparoscopy; reoperation; duodenal obstruction; neonate
 
 <!--pagebreak-->
 ## 1. Introduction
@@ -43,7 +47,7 @@ Recent work has begun to define anatomical landmarks confirming that each step o
 ## 2. Methods
 
 ### 2.1 Design and setting
-Single-center retrospective cohort study at Wuhan Children’s Hospital, a tertiary hospital, reported per STROBE [15], covering December 2012 to June 2026. The institutional ethics committee approved the study (no. 2026R018-E01) and waived informed consent.
+Single-center retrospective cohort study at Wuhan Children’s Hospital, a tertiary hospital, reported per STROBE [15], covering December 2012 to June 2026. The study was not registered in a public study registry. The institutional ethics committee approved the study (no. 2026R018-E01) and waived informed consent.
 
 ### 2.2 Participants
 The institutional intestinal-malrotation database contained 499 children with an operative record. The index operation was the earliest primary Ladd-type operation recorded, identified by searching the Chinese-language procedure name and coded diagnosis for five terms denoting the Ladd procedure, derotation, intestinal rotation, the midgut, and malrotation (Supplementary Table S2). Because the earliest recorded operation is not always the first Ladd procedure, every record whose earliest operation was a diagnostic endoscopy or biopsy, or whose coded diagnosis indicated a previous repair, was adjudicated case by case (§2.4); 19 were reviewed, 18 excluded, and in 3 the index operation was corrected to a later date. No child was excluded for age (oldest 14.2 years). The final cohort was 450 children (Figure 1); no a priori sample-size calculation was performed.

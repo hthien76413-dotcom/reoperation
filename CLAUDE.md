@@ -56,8 +56,8 @@
 | 关键词 | ≤6 个 | 6 个 ✅ |
 | 短标题 | **≤40 字符** | 38 字符 ✅ |
 | 图片格式 | **uncompressed TIFF / GIF / JPEG / EPS**（PNG 不可）| 见 `make_submission_figures.py` |
-| 作者署名 | 须含各作者**最高学位**（MD/PhD 等）| ⚠️ **待补，作者需自行提供** |
-| 表格 | 每张单独上传，**不得嵌在正文里** | ⚠️ 投稿时需从 docx 拆出 |
+| 作者署名 | 须含各作者**最高学位** | 全部作者均为 MD ✅ |
+| 表格 | 每张单独上传，**不得嵌在正文里** | 由 `make_submission_files.py` 拆出 ✅ |
 | 时间事件数据 | 官方要求用 Kaplan-Meier 曲线 | 本稿用 Aalen-Johansen CIF，
   已在 §2.5 写明理由（存在死亡这一竞争事件，朴素 KM 会高估）|
 
@@ -66,6 +66,21 @@ Acknowledgments / Disclosures / References / Figure legends；Disclosures 段**�
 正文内且与 ICMJE COI 表一致，否则退稿；投稿走 Editorial Manager
 (editorialmanager.com/send)；LLM 使用须在 Methods 声明（本稿已声明）。
 官方明确「鼓励同时给出绝对效应差及其置信区间」——正是本稿以风险差为主、OR 降级的写法。
+
+### 投稿上传清单（均由脚本生成，勿手工改 docx）
+
+| 上传项 | 文件 | 生成方式 |
+|---|---|---|
+| 主文件 | `SurgEndosc_submission_maintext.docx` | `make_submission_files.py` |
+| 表格 ×4 | `SurgEndosc_Table1..4.docx` | 同上 |
+| 图 ×4 | `*.tif`（uncompressed TIFF）| `make_submission_figures.py`（.tif 已 gitignore）|
+| 补充材料 | `Supplementary_Material_SurgEndosc.docx` | `md2docx_v2.py` |
+| 推介信 | `Cover_letter_SurgEndosc.docx` | `md2docx_v2.py` |
+| STROBE 清单 | `STROBE_checklist.docx` | 已有 |
+| ICMJE COI 表 | 每位作者一份 | ⚠️ 需作者自行下载填写 |
+
+**改动 `SurgEndosc_manuscript_v1.md` 后，务必重跑 `make_submission_files.py`，
+否则上传的主文件与表格会与主稿脱节。**
 
 ### Surg Endosc 投稿文件
 
