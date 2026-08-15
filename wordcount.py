@@ -6,7 +6,14 @@
 """
 import io, re, sys
 
-PATH = sys.argv[1] if len(sys.argv) > 1 else r"D:\全部肠旋转不良\③肠旋转不良术后再手术\JPS_manuscript_draft_v2.md"
+import os
+_WIN_DEFAULT = r"D:\全部肠旋转不良\③肠旋转不良术后再手术\SurgEndosc_manuscript_v1.md"
+if len(sys.argv) > 1:
+    PATH = sys.argv[1]
+elif os.path.exists("SurgEndosc_manuscript_v1.md"):
+    PATH = "SurgEndosc_manuscript_v1.md"
+else:
+    PATH = _WIN_DEFAULT
 txt = io.open(PATH, encoding="utf-8").read()
 
 
@@ -23,7 +30,7 @@ def count(t):
     return len([w for w in t.split() if re.search(r"[A-Za-z0-9]", w)])
 
 
-abstract = slice_between(r"## Structured Abstract", r"\*\*Type of Study:\*\*")
+abstract = slice_between(r"## Structured Abstract", r"\*\*Keywords:\*\*")
 body = slice_between(r"## 1\. Introduction", r"^---\s*$\n+## Ethics approval")
 
 print("Abstract   %4d words" % count(abstract))
