@@ -73,7 +73,7 @@ for add in (0, 1, 2, 3, k):
 print("\n=== 5. ≥1 岁层 8.5% 的构成：是否只含第1类（现算）===")
 print(f"  ≥1 岁合计 {len(big)} 例（腹腔镜 {len(big & lap)} / 开腹相关 {len(big & opr)}）")
 print(f"  第1类（十二指肠持续梗阻）腹腔镜 {len(big & lap & duo)}/{len(big & lap)}"
-      f" = {len(big & lap & duo)/len(big & lap)*100:.2f}%  ← 稿件 Table 3 应为 6/71 (8.5%)")
+      f" = {len(big & lap & duo)/len(big & lap)*100:.2f}%  ← 稿件 Table 4 应为 6/71 (8.5%)")
 allreop_big = {p for p in big if p in adj_all}
 print(f"  该层全部再手术 {len(allreop_big & lap)}/{len(big & lap)} 腹腔镜、"
       f"{len(allreop_big & opr)}/{len(big & opr)} 开腹相关；"

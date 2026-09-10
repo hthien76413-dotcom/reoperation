@@ -30,7 +30,7 @@ Agreement was computed from each reviewer's own independent copy of the adjudica
 
 ‡ For these two rare binary items, κ is deflated by the low base rate (the kappa paradox): expected agreement was 0.858 for necrosis and 0.941 for resection, so κ is small despite observed agreement above 93%. The prevalence-adjusted bias-adjusted κ (PABAK = (k·Pₒ − 1)/(k − 1)) is reported alongside; its confidence interval is propagated from the Wilson interval for the observed agreement. Necrosis was scored positive by one reviewer only in 8/132 records and by both in 6/132; bowel resection was scored positive by either reviewer in 7/132 records but by both in only 1, which is why its κ is lower still.
 
-§ Approach was recorded with the labels *laparoscopic completion*, *conversion to open*, and *open*; one reviewer additionally used *laparoscopically assisted* for a single record, resolved to laparoscopic completion by consensus. Collapsing that label gives κ=0.83 (0.74 to 0.92). Of the 12 disagreements, 9 lay on the single boundary between conversion and laparoscopic completion, the same boundary examined in the intention-to-treat sensitivity analysis (Table 4); the remaining 3 involved open versus laparoscopic completion. The automated classifier used to assign approach in the full cohort was validated against the reviewer consensus in this pool (final rows).
+§ Approach was recorded with the labels *laparoscopic completion*, *conversion to open*, and *open*; one reviewer additionally used *laparoscopically assisted* for a single record, resolved to laparoscopic completion by consensus. Collapsing that label gives κ=0.83 (0.74 to 0.92). Of the 12 disagreements, 9 lay on the single boundary between conversion and laparoscopic completion, the same boundary examined in the intention-to-treat sensitivity analysis (Table 3); the remaining 3 involved open versus laparoscopic completion. The automated classifier used to assign approach in the full cohort was validated against the reviewer consensus in this pool (final rows).
 
 ¶ Where the two reviewers agreed on every record — the two associated-anomaly fields (52/52 each) and mechanism (12/12) — κ = 1.00, but the normal-approximation standard error of κ is zero at perfect concordance, so its confidence interval degenerates to 1.00–1.00 and is not a statement of precision. The Wilson intervals for the observed agreements are 93.1–100%, 93.1–100%, 75.7–100% respectively. In the mechanism pass only two of the four categories were used (technical deficiency 3, postoperative adhesion 9); by definition this category contains no intrinsic lesion, and no case was scored indeterminate. Agreement was aided by the three technically deficient cases being documented in unusually explicit terms.
 
@@ -64,7 +64,7 @@ Agreement of the approach and necrosis rules with blinded reviewer consensus in 
 
 Candidate reoperations adjudicated: 53. Excluded: planned staged procedure 11 (4 of them in children outside the cohort), beyond time window 2, records unavailable 1, and 3 in children whose index operation was judged not to be a primary Ladd procedure (§2.4).
 
-*Follow-up completeness for the 42-day window (n=450).* 396 children (88.0%) completed the window without either the outcome or the competing event; 36 (8.0%) had the primary outcome (Table 2); 16 (3.6%) had the competing event (confirmed death) within the window, at a median of 1 day (Table 3 footnote); 2 children (0.4%) discharged against medical advice could not be traced by telephone and were censored at their last recorded discharge, 5 and 18 days after the index operation (§2.3).
+*Follow-up completeness for the 42-day window (n=450).* 396 children (88.0%) completed the window without either the outcome or the competing event; 36 (8.0%) had the primary outcome (Table 2); 16 (3.6%) had the competing event (confirmed death) within the window, at a median of 1 day (Table 4 footnote); 2 children (0.4%) discharged against medical advice could not be traced by telephone and were censored at their last recorded discharge, 5 and 18 days after the index operation (§2.3).
 
 
 ---
@@ -94,7 +94,7 @@ Adjudication was performed in four independent passes designed to keep eligibili
 
 ### S5a. Secondary and sensitivity analyses
 
-All are reported in Table 4 of the main text unless noted.
+All are reported in Table 3 of the main text unless noted.
 
 | Analysis | Purpose | Result |
 |---|---|---|
