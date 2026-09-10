@@ -66,6 +66,22 @@
 
 **仍未查到、须作者自行核实**：正文字数上限、参考文献条数上限、图表数量上限、
 表格是否须单独成文件（Surg Endosc 要求单独上传，本刊未知）。
+另：官方写「10-point Times Roman」，现有脚本出的是 12 pt 双倍行距（投稿稿通用格式）。
+原文用 "e.g." 属建议而非硬性，暂未改；如要改，在 `md2docx_v2.py` 里统一调。
+
+### Ped Surg Int 投稿文件
+
+| 文件 | 说明 |
+|---|---|
+| `PedSurgInt_manuscript_v1.md` | 正文（由 Surg Endosc 稿派生；该稿已冻结留档）|
+| `Cover_letter_PedSurgInt.md` | 推介信，以「病因/机制盲法裁定」与该刊自身文献 [2][8] 的承接关系开篇 |
+
+**题目已改**（去掉句首 Versus，把病因与机制提前）：
+Cause and Operative Mechanism of Early Unplanned Reoperation After Primary
+Ladd Procedure: A Blinded Adjudication Study of 450 Children
+
+**尚未做**：补充材料派生 Ped Surg Int 版、STROBE 清单换新题目、
+投稿包生成脚本改造（卡在「表格是否单独成文件」这一未知项上）。
 ### Surg Endosc 官方投稿规定（已据官方 PDF「Instructions for Authors」2025-07 版核实）
 
 **此前一度采用的「摘要 250 / 正文 3500 / 图表 6 / 文献 35」是错的**——那组数字来自
