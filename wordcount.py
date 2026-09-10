@@ -31,7 +31,8 @@ def count(t):
 
 
 abstract = slice_between(r"## Structured Abstract", r"\*\*Keywords:\*\*")
-body = slice_between(r"## 1\. Introduction", r"^---\s*$\n+## Ethics approval")
+body = slice_between(r"## 1\. Introduction",
+                     r"^---\s*$\n+## (?:Ethics approval|Acknowledgements|Declarations)")
 
 print("Abstract   %4d words" % count(abstract))
 print("Main text  %4d words" % count(body))

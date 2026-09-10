@@ -2,7 +2,7 @@
 
 **Article type:** Original Article (retrospective cohort study)
 
-**Title:** Early Unplanned Reoperation After Laparoscopic Versus Open Ladd Procedure: Adjudicated Cause and Mechanism in 450 Children
+**Title:** Cause and Operative Mechanism of Early Unplanned Reoperation After Primary Ladd Procedure: A Blinded Adjudication Study of 450 Children
 
 **Short title:** Early reoperation after Ladd procedure
 
@@ -139,33 +139,27 @@ Our initial premise required revision. We first treated persistent duodenal obst
 
 ---
 
-## Ethics approval
-
-Approved by the Ethics Committee of Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital), Tongji Medical College, Huazhong University of Science & Technology (approval no. 2026R018-E01). Informed consent was waived owing to the retrospective design.
-
-## Funding
-
-This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
-
-## CRediT authorship contribution statement
-
-**Jun Shu:** Conceptualization, Methodology, Software, Formal analysis, Data curation, Validation, Visualization, Writing – original draft. **Kai Zheng:** Conceptualization, Investigation, Data curation, Validation, Writing – original draft. **Hongqiang Bian:** Investigation, Resources, Writing – review & editing. **Jun Yang:** Investigation, Resources, Writing – review & editing. **Xin Wang:** Conceptualization, Supervision, Project administration, Writing – review & editing. Jun Shu and Kai Zheng independently performed the blinded outcome and exposure adjudication and, in a separate blinded pass, the mechanism re-review of the persistent duodenal obstructions. All authors read and approved the final manuscript.
-
-## Declaration of competing interest
-
-Jun Shu, Kai Zheng, Hongqiang Bian, Jun Yang, and Xin Wang have no conflicts of interest or financial ties to disclose.
-
-## Data availability
-
-The data that support the findings of this study are not publicly available because they contain information that could compromise the privacy of the children studied. De-identified aggregate data are available from the corresponding author on reasonable request, subject to institutional approval.
-
 ## Acknowledgements
 
 None.
 
-## Declaration of generative AI and AI-assisted technologies in the manuscript preparation process
+## Declarations
 
-During the preparation of this work the authors used a large language model to assist with language editing and with checking the internal consistency of reported numbers. The authors reviewed and edited the content as needed and take full responsibility for the content of the publication.
+**Funding.** This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+**Competing interests.** Jun Shu, Kai Zheng, Hongqiang Bian, Jun Yang, and Xin Wang have no conflicts of interest or financial ties to disclose.
+
+**Ethics approval.** Approved by the Ethics Committee of Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital), Tongji Medical College, Huazhong University of Science & Technology (approval no. 2026R018-E01). The study was performed in accordance with the ethical standards of the institutional research committee and with the 1964 Declaration of Helsinki and its later amendments.
+
+**Consent to participate.** Informed consent was waived by the institutional ethics committee owing to the retrospective design and the use of de-identified records.
+
+**Consent to publish.** Not applicable; no individually identifiable data are reported.
+
+**Data availability.** The data that support the findings of this study are not publicly available because they contain information that could compromise the privacy of the children studied. De-identified aggregate data are available from the corresponding author on reasonable request, subject to institutional approval.
+
+**Authors' contributions.** **Jun Shu:** Conceptualization, Methodology, Software, Formal analysis, Data curation, Validation, Visualization, Writing – original draft. **Kai Zheng:** Conceptualization, Investigation, Data curation, Validation, Writing – original draft. **Hongqiang Bian:** Investigation, Resources, Writing – review & editing. **Jun Yang:** Investigation, Resources, Writing – review & editing. **Xin Wang:** Conceptualization, Supervision, Project administration, Writing – review & editing. Jun Shu and Kai Zheng independently performed the blinded outcome and exposure adjudication and, in a separate blinded pass, the mechanism re-review of the persistent duodenal obstructions. All authors read and approved the final manuscript.
+
+**Use of generative AI.** During the preparation of this work the authors used a large language model to assist with language editing and with checking the internal consistency of reported numbers. The authors reviewed and edited the content as needed and take full responsibility for the content of the publication.
 
 <!--pagebreak-->
 ## References
