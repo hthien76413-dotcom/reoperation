@@ -198,7 +198,7 @@ None.
 | Characteristic | Overall (n=450) | Laparoscopic completion (n=255) | Open-related (n=195) | SMD\* |
 |---|---|---|---|---|
 | Male sex, n (%) | 344 (76.4) | 196 (76.9) | 148 (75.9) | +0.02 |
-| Age at index operation, months, median (IQR) | 0.2 (0.1–2.0) | 0.6 (0.2–22.0) | 0.1 (0.1–0.5) | **+0.76**† |
+| Age at index operation, months, median (IQR) | 0.2 (0.1–2.0) | 0.6 (0.2–22.0) | 0.1 (0.1–0.5) | **+0.76**^a^ |
 | — Neonate (<28 days), n (%) | 305 (67.8) | 142 (55.7) | 163 (83.6) | **−0.64** |
 | — 28 days – 1 year, n (%) | 61 (13.6) | 42 (16.5) | 19 (9.7) | **+0.20** |
 | — ≥1 year, n (%) | 84 (18.7) | 71 (27.8) | 13 (6.7) | **+0.58** |
@@ -211,7 +211,7 @@ None.
 | — Chromosomal / syndromic | 1 (0.2) | 1 (0.4) | 0 (0.0) | +0.09 |
 
 \* Standardized mean difference (laparoscopic completion minus open-related); |SMD| ≥ 0.10 in bold [25]. We report SMDs rather than p values because the two arms are not samples from a common population; the SMD quantifies the size of the imbalance the analysis must contend with, independently of sample size. The two groups differ on two separate axes: *severity* (necrosis, associated anomalies — higher in the open-related arm) and *age* (neonates concentrated in the open-related arm, children ≥1 year in the laparoscopic arm). These push any crude comparison in opposite directions, which is why the cause-specific analysis is presented stratified by age (Table 3). Necrosis is shown as a marker of index-operation severity, not a baseline demographic. Isolated patent foramen ovale, patent ductus arteriosus, and secundum atrial septal defect were treated as physiological in neonates. Diagnostic text was unavailable for 6/450 (1.3%), imputed as anomaly-absent, which biases anomaly-related associations toward the null. Anomaly coding draws on discharge and pathology text from every admission, including any reoperation, so these rows describe anomalies ever recorded rather than anomalies known before the index operation.
-† Age is strongly right-skewed, so its SMD is computed on the log(days + 1) scale; the median and IQR are shown untransformed, in months.
+^a^ Age is strongly right-skewed, so its SMD is computed on the log(days + 1) scale; the median and IQR are shown untransformed, in months.
 
 <!--pagebreak-->
 
@@ -222,14 +222,14 @@ None.
 | 1. Persistent duodenal obstruction (no intrinsic lesion) | 12 (33.3%) | 12 | 0 | **4.7% vs. 0.0%** | **NE (≥2.19)** | **0.0016** | **0.010** |
 | 2. Necrosis / perforation / anastomotic complication | 8 (22.2%) | 2 | 6 | 0.8% vs. 3.1% | 0.25 (0.02–1.4) | 0.0821 | 0.411 |
 | 3. Adhesive obstruction (non-duodenal) | 5 (13.9%) | 4 | 1 | 1.6% vs. 0.5% | 3.09 (0.30–153.0) | 0.3944 | 1.000 |
-| 4. Missed associated anomaly† | 4 (11.1%) | 3 | 1 | 1.2% vs. 0.5% | 2.31 (0.18–121.9) | 0.6367 | 1.000 |
+| 4. Missed associated anomaly^a^ | 4 (11.1%) | 3 | 1 | 1.2% vs. 0.5% | 2.31 (0.18–121.9) | 0.6367 | 1.000 |
 | 5. Recurrent volvulus / redo-Ladd | 2 (5.6%) | 2 | 0 | 0.8% vs. 0.0% | NE (≥0.14) | 0.5078 | 1.000 |
-| 6. Other‡ | 5 (13.9%) | 1 | 4 | 0.4% vs. 2.1% | 0.19 (0.00–1.9) | 0.1713 | 0.685 |
+| 6. Other^b^ | 5 (13.9%) | 1 | 4 | 0.4% vs. 2.1% | 0.19 (0.00–1.9) | 0.1713 | 0.685 |
 | **Obstructive causes combined (1+3+5)** | **19 (52.8%)** | 18 | 1 | 7.1% vs. 0.5% | — | — | — |
 
 \* Fisher exact test on rates with the full cohort as denominator (255 laparoscopic, 195 open-related); conditional exact (Cornfield) 95% confidence intervals; Holm's step-down correction across the six cause-specific comparisons. **NE, not estimable**: no open-related child had a persistent duodenal obstruction, so only the one-sided lower bound is informative and the risk difference (+4.7 percentage points, 95% CI 1.9 to 8.0) is the interpretable measure. Conditional on having been reoperated, persistent duodenal obstruction accounted for 12/24 laparoscopic versus 0/12 open-related reoperations; this conditions on a consequence of the exposure and describes case-mix rather than effect.
-† Coexisting malformation first identified or confirmed at reoperation: duodenal membrane 3, multiple jejunal atresia 1.
-‡ Wound dehiscence 2, stress-ulcer bleeding 2, stoma prolapse 1.
+^a^ Coexisting malformation first identified or confirmed at reoperation: duodenal membrane 3, multiple jejunal atresia 1.
+^b^ Wound dehiscence 2, stress-ulcer bleeding 2, stoma prolapse 1.
 
 *Mechanism of the 12 persistent duodenal obstructions* (operative-note re-review, §3.7): postoperative periduodenal adhesion 9 (all laparoscopic; 3 neonates and 6 children ≥1 year), technical deficiency of the index procedure 3 (all laparoscopic, all neonates).
 
@@ -239,7 +239,7 @@ None.
 
 | Age stratum | Outcome | Laparoscopic completion | Open-related | OR (exact 95% CI) | p\* |
 |---|---|---|---|---|---|
-| Neonate (<28 days) | Persistent duodenal obstruction | 6/142 (4.2%) | 0/163 (0.0%) | NE (≥1.38) | 0.010§ |
+| Neonate (<28 days) | Persistent duodenal obstruction | 6/142 (4.2%) | 0/163 (0.0%) | NE (≥1.38) | 0.010^a^ |
 |  | Any unplanned reoperation | 15/142 (10.6%) | 9/163 (5.5%) | 2.02 (0.80–5.4) | 0.135 |
 | 28 days – 1 year | Persistent duodenal obstruction | 0/42 (0.0%) | 0/19 (0.0%) | NE (—) | — |
 |  | Any unplanned reoperation | 0/42 (0.0%) | 3/19 (15.8%) | 0.00 (0.00–1.0) | 0.027 |
@@ -247,7 +247,7 @@ None.
 |  | Any unplanned reoperation | 9/71 (12.7%) | 0/13 (0.0%) | NE (≥0.36) | 0.343 |
 
 \* Fisher exact test; conditional exact (Cornfield) 95% confidence intervals. **NE, not estimable** (a zero cell); for such comparisons only the one-sided lower bound is informative, and the risk difference is the interpretable effect measure. No child aged 28 days to 1 year had a persistent duodenal obstruction in either arm, so that comparison is not estimable and no p value is given.
-§ Gray's test on the subdistribution hazard (χ²=7.01, p=0.008), treating reoperation for another cause and confirmed death as competing events. Sixteen open-related neonates died within the window without having been reoperated, at a median of 1 day (IQR 0–2; 7 on the day of operation), before the days 16–22 in which all six duodenal reoperations occurred. Those children therefore lost their entire period at risk, and the expected number of unobserved duodenal reoperations among them is 0.68; one such event would raise p from 0.010 to 0.053. Children who reached a reoperation before dying are counted as outcomes, not as competing events. An unmeasured confounder would need to be associated with both approach and outcome by a risk ratio of at least 2.10 (E-value for the exact lower bound of 1.38) to move that bound to 1 [21]. The three index operations judged technically deficient were performed in 2016, 2017, and 2022; the three neonatal adhesion-mechanism cases in 2014 and 2015. The fall in the neonatal laparoscopic rate across eras is therefore attributable to the adhesion cases, not to the technical ones. Only 13 children aged ≥1 year were operated open, so that stratum has almost no power to detect a difference: its risk difference of +8.5 percentage points spans −14.8 to +17.2 (Newcombe). The neonatal comparison is not robust to a single unobserved competing event (§4). Applying Holm's correction across the three age strata for persistent duodenal obstruction leaves the neonatal comparison significant (adjusted p=0.029); if all six stratum-by-outcome comparisons in this table are treated as one family, the adjusted p is 0.058 and no longer falls below 0.05. Both are reported so that either family definition can be applied. Because no open-related child had this outcome in any stratum, the Mantel–Haenszel odds ratio pooled across the three age strata is not estimable, as is the crude unstratified odds ratio; the age dependence is therefore shown as rates rather than as a ratio, since children aged ≥1 year had both a higher background rate of duodenal-type reoperation (6/84, 7.1%, versus 6/305, 2.0% in neonates) and a much higher probability of being operated laparoscopically (85% versus 47%). This stratification was post hoc (§2.5).
+^a^ Gray's test on the subdistribution hazard (χ²=7.01, p=0.008), treating reoperation for another cause and confirmed death as competing events. Sixteen open-related neonates died within the window without having been reoperated, at a median of 1 day (IQR 0–2; 7 on the day of operation), before the days 16–22 in which all six duodenal reoperations occurred. Those children therefore lost their entire period at risk, and the expected number of unobserved duodenal reoperations among them is 0.68; one such event would raise p from 0.010 to 0.053. Children who reached a reoperation before dying are counted as outcomes, not as competing events. An unmeasured confounder would need to be associated with both approach and outcome by a risk ratio of at least 2.10 (E-value for the exact lower bound of 1.38) to move that bound to 1 [21]. The three index operations judged technically deficient were performed in 2016, 2017, and 2022; the three neonatal adhesion-mechanism cases in 2014 and 2015. The fall in the neonatal laparoscopic rate across eras is therefore attributable to the adhesion cases, not to the technical ones. Only 13 children aged ≥1 year were operated open, so that stratum has almost no power to detect a difference: its risk difference of +8.5 percentage points spans −14.8 to +17.2 (Newcombe). The neonatal comparison is not robust to a single unobserved competing event (§4). Applying Holm's correction across the three age strata for persistent duodenal obstruction leaves the neonatal comparison significant (adjusted p=0.029); if all six stratum-by-outcome comparisons in this table are treated as one family, the adjusted p is 0.058 and no longer falls below 0.05. Both are reported so that either family definition can be applied. Because no open-related child had this outcome in any stratum, the Mantel–Haenszel odds ratio pooled across the three age strata is not estimable, as is the crude unstratified odds ratio; the age dependence is therefore shown as rates rather than as a ratio, since children aged ≥1 year had both a higher background rate of duodenal-type reoperation (6/84, 7.1%, versus 6/305, 2.0% in neonates) and a much higher probability of being operated laparoscopically (85% versus 47%). This stratification was post hoc (§2.5).
 
 <!--pagebreak-->
 
