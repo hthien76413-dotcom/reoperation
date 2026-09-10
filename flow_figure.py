@@ -165,5 +165,11 @@ ax.text(CX, 1.05,
 fig.tight_layout()
 fig.savefig("Figure1_flow_EN.png", dpi=300)
 fig.savefig("Figure1_flow_EN.pdf")
+# ps.fonttype=42 让 TrueType 字体嵌入 EPS，满足官方「Vector graphics containing
+# fonts must have the fonts embedded」。必须放在 PDF 保存【之后】：本机 matplotlib
+# 在该参数生效时写 PDF 会抛 ValueError: bytes must be in range(0, 256)
+# （字体子集化的共用代码路径所致），只影响 PDF，不影响 EPS 本身。
+matplotlib.rcParams["ps.fonttype"] = 42
+fig.savefig("Figure1_flow_EN.eps")   # 矢量投稿版
 print(f"n_surg={n_surg}  cohort={n_cohort}  lap={n_lap}/{r_lap}  conv={n_conv}/{r_conv}  open={n_open}/{r_open}")
 print("saved Figure1_flow_EN.png / .pdf")

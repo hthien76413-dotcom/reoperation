@@ -1,6 +1,11 @@
-# 投稿用 TIFF 由 make_submission_figures.py 从 PNG 转出，体积大且可复现，不入库
+# 投稿用图由 make_submission_figures.py 从出图脚本的产物转出，可复现，不入库。
+# 出图脚本自身的产物（Figure*_*.png/.pdf/.eps）仍然入库，便于比对与追溯。
 *.tif
 *.tiff
+Fig1.eps
+Fig2.eps
+FigS1.eps
+FigS2.eps
 
 # Python 字节码缓存
 __pycache__/

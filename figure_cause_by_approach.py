@@ -125,15 +125,9 @@ ax.set_axisbelow(True)
 for s in ("top", "right", "bottom"): ax.spines[s].set_visible(False)
 ax.spines["left"].set_color(AXIS); ax.spines["left"].set_linewidth(0.9)
 
-# 标题与副标题（分行，避免溢出）
-ax.set_title("Cause of unplanned early reoperation, by index surgical approach",
-             fontsize=12.0, color=INK, fontweight="bold", loc="left", pad=62)
-ax.text(0, 1.155, f"No difference detected in the overall rate — laparoscopic {tot_a}/{N_LAP} ({tot_a/N_LAP*100:.1f}%) "
-                  f"vs. open-related {tot_b}/{N_OPR} ({tot_b/N_OPR*100:.1f}%), p={P_OVERALL:.2f}.",
-        transform=ax.transAxes, fontsize=9.4, color=INK2, va="bottom")
-ax.text(0, 1.095, "The composition differed: duodenal obstruction after laparoscopy, "
-                  "necrosis and perforation after open surgery.",
-        transform=ax.transAxes, fontsize=9.4, color=INK, va="bottom", fontweight="bold")
+# Ped Surg Int：图内不得含标题或图注（Artwork Guidelines）。原有的一条标题
+# 与两行副标题（总体率无差异的数字、以及「构成不同」这句结论）内容均已完整
+# 见于补充材料 Figure S2 的图注，故此处删除不丢信息；上方留白相应收窄。
 
 # 图例置于数据区外（右下空白），横排
 # 图例移到绘图区之上、副标题之下，横排，完全脱离数据区
@@ -142,16 +136,20 @@ ax.legend(handles=[Patch(facecolor=C_LAP, label=f"Laparoscopic completion (n={N_
           loc="lower left", bbox_to_anchor=(0.0, 1.005), ncol=2, frameon=False,
           fontsize=9.2, labelcolor=INK, handlelength=1.4, handleheight=0.95,
           columnspacing=2.4, borderpad=0.0, handletextpad=0.6)
-fig.text(0.012, 0.052,
-         "Bars are cause-specific rates with the full approach group as the denominator; numerals are event counts. 95% CIs in Table 2.",
-         fontsize=8.0, color=MUTED)
-fig.text(0.012, 0.014,
-         "The duodenal-obstruction comparison is confounded by age and is shown stratified in Figure 2.",
-         fontsize=8.0, color=MUTED)
+# Ped Surg Int：图内不得含图注。原底部两行说明（分母口径与事件计数、
+# 置信区间见 Table 2、十二指肠梗阻比较受年龄混杂需看 Figure 2）的内容
+# 已完整见于补充材料 Figure S2 的图注，故删除不丢信息；
+# 下方留白相应收窄（原 rect 底边 0.082 是为这两行预留的）。
 
-fig.tight_layout(rect=[0, 0.082, 1, 0.99])
+fig.tight_layout(rect=[0, 0, 1, 0.99])
 fig.savefig("FigureS2_cause_by_approach.png", dpi=300, facecolor=SURFACE)
 fig.savefig("FigureS2_cause_by_approach.pdf", facecolor=SURFACE)
+# ps.fonttype=42 让 TrueType 字体嵌入 EPS，满足官方「Vector graphics containing
+# fonts must have the fonts embedded」。必须放在 PDF 保存【之后】：本机 matplotlib
+# 在该参数生效时写 PDF 会抛 ValueError: bytes must be in range(0, 256)
+# （字体子集化的共用代码路径所致），只影响 PDF，不影响 EPS 本身。
+matplotlib.rcParams["ps.fonttype"] = 42
+fig.savefig("FigureS2_cause_by_approach.eps", facecolor=SURFACE)   # 矢量投稿版
 print("saved FigureS2_cause_by_approach.png / .pdf")
 for r in rows:
     print(f'  {r["en"][:38]:<40} lap {r["a"]:>2}/{N_LAP} = {r["ra"]:.1f}%   opr {r["b"]:>2}/{N_OPR} = {r["rb"]:.1f}%')
