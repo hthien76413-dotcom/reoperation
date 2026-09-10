@@ -1,14 +1,14 @@
 # STROBE Statement — checklist of items that should be included in reports of *cohort studies*
 
-**Manuscript:** *Early Unplanned Reoperation After Laparoscopic Versus Open Ladd Procedure: Adjudicated Cause and Mechanism in 450 Children*
+**Manuscript:** *Cause and Operative Mechanism of Early Unplanned Reoperation After Primary Ladd Procedure: A Blinded Adjudication Study of 450 Children*
 
 Section references are to the numbered sections of the submitted manuscript. Where an item is only partly satisfied, this is stated rather than claimed.
 
 | Item No | Recommendation | Reported in |
 |---|---|---|
 | **Title and abstract** | | |
-| 1 (a) | Indicate the study's design with a commonly used term in the title or the abstract | **Title page** ("Article type: Observational study (retrospective cohort study)"); **Abstract, Methods** ("Single-center retrospective cohort of 450 children…") |
-| 1 (b) | Provide in the abstract an informative and balanced summary of what was done and what was found | **Structured Abstract** (259 words). Cause-specific and mechanism findings are given first, the null overall comparison last; the age stratification is labelled *post hoc*; the odds ratio is explicitly flagged as not estimable rather than omitted |
+| 1 (a) | Indicate the study's design with a commonly used term in the title or the abstract | **Title page** ("Article type: Original Article (retrospective cohort study)"); **Title** ("A Blinded Adjudication Study of 450 Children"); **Abstract, Methods** ("Single-center retrospective cohort of 450 children…") |
+| 1 (b) | Provide in the abstract an informative and balanced summary of what was done and what was found | **Structured Abstract** (194 words; Purpose / Methods / Results / Conclusion). Cause-specific and mechanism findings are given first, the null overall comparison last; the age stratification is labelled *post hoc*; the odds ratio is explicitly flagged as not estimable rather than omitted |
 | **Introduction** | | |
 | 2 | Explain the scientific background and rationale for the investigation being reported | **§1**, paragraphs 1–3 |
 | 3 | State specific objectives, including any prespecified hypotheses | **§1**, final paragraph, objectives (i)–(iii). The same paragraph states explicitly that the age-stratified analysis **was not part of this plan** |
@@ -45,7 +45,7 @@ Section references are to the numbered sections of the submitted manuscript. Whe
 | 20 | Give a cautious overall interpretation of results considering objectives, limitations, multiplicity of analyses, results from similar studies, and other relevant evidence | **§4**, paragraphs 2–8. The primary comparison is reported as a bounded null; the ≥1-year stratum is described as absence of evidence rather than evidence of no difference; both multiplicity families are reported; a 2026 meta-analysis reporting a contrary reoperation result is stated explicitly |
 | 21 | Discuss the generalisability (external validity) of the study results | **§4 Limitations**, final paragraph — single center; two-thirds of the cohort presented as neonates, so the balance of causes may differ where malrotation presents later |
 | **Other information** | | |
-| 22 | Give the source of funding and the role of the funders for the present study and, if applicable, for the original study on which the present article is based | **Funding**: no specific grant from any funding agency |
+| 22 | Give the source of funding and the role of the funders for the present study and, if applicable, for the original study on which the present article is based | **Declarations**, *Funding*: no specific grant from any funding agency |
 
 ---
 

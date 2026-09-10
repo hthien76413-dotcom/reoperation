@@ -75,6 +75,15 @@
 |---|---|
 | `PedSurgInt_manuscript_v1.md` | 正文（由 Surg Endosc 稿派生；该稿已冻结留档）|
 | `Cover_letter_PedSurgInt.md` | 推介信，以「病因/机制盲法裁定」与该刊自身文献 [2][8] 的承接关系开篇 |
+| `Supplementary_Material_PedSurgInt.md` | 补充材料来源（S1–S5 + 图 S1/S2），除题目外与 Surg Endosc 版逐字一致 |
+| `STROBE_checklist.md` | **就地更新，现跟随 Ped Surg Int 稿**（不再对应已冻结的 Surg Endosc 稿）|
+
+**补充材料的打包方式与 Surg Endosc 不同**：Surg Endosc 要求每张表单独上传，
+故当时拆成「核心 + S4 + S5」三个文件（`make_submission_supplement.py`）；
+Ped Surg Int 无此规定，补充材料按通行惯例**合成单一文件**
+（`Supplementary_Material_PedSurgInt.docx`，含全部 S1–S5 与两图）。
+若核实后发现该刊也要求拆分，把 `make_submission_supplement.py` 的 `SRC`
+与输出前缀指向 PedSurgInt 版即可。
 
 **题目已改**（去掉句首 Versus，把病因与机制提前）：
 Cause and Operative Mechanism of Early Unplanned Reoperation After Primary
