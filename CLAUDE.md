@@ -128,8 +128,16 @@ Ladd Procedure: A Blinded Adjudication Study of 450 Children
    前向引用改为小节号。**`stratified_analysis.py` 里写死的表号已同步**，
    重跑不会产出旧编号。
 
-**仍未做**：参考文献格式（须改为 Springer 式：作者后接年份括号、刊名不斜体、
-卷:页去期号、附 DOI 全链接），25 条全部要改，DOI 需逐条查证。
+6. **参考文献格式**：已由 Vancouver/AMA 改为 Springer 式——作者后接（年份）、
+   刊名不斜体、卷:页去期号、附 DOI 全链接。25 条中 **22 条已附 DOI**，
+   均取自本轮检索结果中可见的 URL 或页面文本，**未核实者一律留空**
+   （官方原文 "If available, please always include DOIs"，允许缺省）。
+   无 DOI 的三条及原因：
+   - **[3] Lang 2026 *Surg Innov***：⚠️ 反复检索均**无法确认该文献存在**，
+     而它是全篇被引最多（6 次）、且承载 OR 1.67 这一具体数值的文献。
+     **投稿前必须由作者自行核实**，这是目前最大的单点风险。
+   - **[18] Holm 1979**、**[19] Aalen–Johansen 1978**：DOI 制度之前的旧文，
+     仅有 JSTOR stable URL（如 jstor.org/stable/4615733），确无 DOI。
 ### Surg Endosc 官方投稿规定（已据官方 PDF「Instructions for Authors」2025-07 版核实）
 
 **此前一度采用的「摘要 250 / 正文 3500 / 图表 6 / 文献 35」是错的**——那组数字来自

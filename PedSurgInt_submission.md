@@ -266,30 +266,30 @@ None.
 <!--pagebreak-->
 ## References
 
-1. Nehra D, Goldstein AM. Intestinal malrotation: varied clinical presentation from infancy through adulthood. *Surgery*. 2011;149(3):386-393.
-2. Catania VD, Lauriti G, Pierro A, Zani A. Open versus laparoscopic approach for intestinal malrotation in infants and children: a systematic review and meta-analysis. *Pediatr Surg Int*. 2016;32(12):1157-1164.
-3. Lang Y, Chen Q, Wu M, Chen G, Liu W, Yuan C. Laparoscopic vs open Ladd's procedure for intestinal malrotation in infants and children: a systematic review and meta-analysis. *Surg Innov*. 2026:15533506261460156.
-4. Zhang Z, Chen Y, Yan J. Laparoscopic versus open Ladd's procedure for intestinal malrotation in infants and children: a systematic review and meta-analysis. *J Laparoendosc Adv Surg Tech A*. 2022;32(2):204-212.
-5. Johnston WR, Hwang R, Mattei P. Laparoscopic versus open Ladd procedure for midgut malrotation. *J Pediatr Surg*. 2024;59(12):161673.
-6. Duy HP, Manh HV, Tran NX, Yoshimura S, Okata Y. Risk factors for postoperative volvulus and its laparoscopic management following laparoscopic Ladd's procedure in pediatric patients with intestinal malrotation: a single-center, retrospective cohort study. *J Pediatr Surg*. 2025;60(7):162356.
-7. Arnaud AP, Suply E, Eaton S, Blackburn SC, Giuliani S, Curry JI, et al. Laparoscopic Ladd's procedure for malrotation in infants and children is still a controversial approach. *J Pediatr Surg*. 2019;54(9):1843-1847.
-8. El-Gohary Y, Alagtal M, Gillick J. Long-term complications following operative intervention for intestinal malrotation: a 10-year review. *Pediatr Surg Int*. 2010;26(2):203-206.
-9. Salehi Karlslätt K, Husberg B, Ullberg U, Nordenskjöld A, Wester T. Intestinal malrotation in children: clinical presentation and outcomes. *Eur J Pediatr Surg*. 2024;34(3):228-235.
-10. Eksarko P, Nazir S, Kessler E, LeBlanc P, Zeidman M, Asarian AP, et al. Duodenal web associated with malrotation and review of literature. *J Surg Case Rep*. 2013;2013(12):rjt110.
-11. Gomaa IA, Mirande MD, Armenia SJ, Aboelmaaty S, Dozois EJ, Perry WRG. Intestinal malrotation in the adult population: diagnosis, management, and outcomes after laparoscopic Ladd procedure. *J Gastrointest Surg*. 2024;28(8):1339-1343.
-12. Xie W, Li Z, Wang Q, Wang L, Pan Y, Lu C. Laparoscopic vs open Ladd's procedure for malrotation in neonates and infants: a propensity score matching analysis. *BMC Surg*. 2022;22(1):25.
-13. Skertich NJ, Ingram MC, Grunvald M, Ritz E, Pillai S, Madonna MB, et al. Outcomes of laparoscopic versus open Ladd procedures and risk factors for conversion. *J Laparoendosc Adv Surg Tech A*. 2021;31(3):336-342.
-14. Zeng X, Lian N, Wang X, Du D. Abnormal anatomical landmarks: the guide points of laparoscopic Ladd's surgery for neonatal congenital intestinal malrotation. *Surg Endosc*. 2025;39(7):4386-4391.
-15. von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP; STROBE Initiative. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. *Lancet*. 2007;370(9596):1453-1457.
-16. Byrt T, Bishop J, Carlin JB. Bias, prevalence and kappa. *J Clin Epidemiol*. 1993;46(5):423-429.
-17. Newcombe RG. Interval estimation for the difference between independent proportions: comparison of eleven methods. *Stat Med*. 1998;17(8):873-890.
-18. Holm S. A simple sequentially rejective multiple test procedure. *Scand J Stat*. 1979;6(2):65-70.
-19. Aalen OO, Johansen S. An empirical transition matrix for non-homogeneous Markov chains based on censored observations. *Scand J Stat*. 1978;5(3):141-150.
-20. Firth D. Bias reduction of maximum likelihood estimates. *Biometrika*. 1993;80(1):27-38.
-21. VanderWeele TJ, Ding P. Sensitivity analysis in observational research: introducing the E-value. *Ann Intern Med*. 2017;167(4):268-274.
-22. Bass KD, Rothenberg SS, Chang JH. Laparoscopic Ladd's procedure in infants with malrotation. *J Pediatr Surg*. 1998;33(2):279-281.
-23. da Costa KM, Saxena AK. Laparoscopic Ladd procedure for malrotation in newborns and infants. *Am Surg*. 2021;87(2):253-258.
-24. Takamoto N, Aso S, Konishi T, Fujiogi M, Kutsukake M, Yanagida Y, et al. Effect of adhesion barrier use during Ladd procedure for intestinal malrotation on postoperative midgut volvulus and postoperative small-bowel obstruction: a retrospective cohort study using a national inpatient database. *J Am Coll Surg*. 2026;242(5):1279-1288.
-25. Austin PC. Balance diagnostics for comparing the distribution of baseline covariates between treatment groups in propensity-score matched samples. *Stat Med*. 2009;28(25):3083-3107.
+1. Nehra D, Goldstein AM (2011) Intestinal malrotation: varied clinical presentation from infancy through adulthood. Surgery 149:386-393. https://doi.org/10.1016/j.surg.2010.07.004
+2. Catania VD, Lauriti G, Pierro A, Zani A (2016) Open versus laparoscopic approach for intestinal malrotation in infants and children: a systematic review and meta-analysis. Pediatr Surg Int 32:1157-1164. https://doi.org/10.1007/s00383-016-3974-2
+3. Lang Y, Chen Q, Wu M, Chen G, Liu W, Yuan C (2026) Laparoscopic vs open Ladd's procedure for intestinal malrotation in infants and children: a systematic review and meta-analysis. Surg Innov 15533506261460156.
+4. Zhang Z, Chen Y, Yan J (2022) Laparoscopic versus open Ladd's procedure for intestinal malrotation in infants and children: a systematic review and meta-analysis. J Laparoendosc Adv Surg Tech A 32:204-212. https://doi.org/10.1089/lap.2021.0436
+5. Johnston WR, Hwang R, Mattei P (2024) Laparoscopic versus open Ladd procedure for midgut malrotation. J Pediatr Surg 59:161673. https://doi.org/10.1016/j.jpedsurg.2024.08.013
+6. Duy HP, Manh HV, Tran NX, Yoshimura S, Okata Y (2025) Risk factors for postoperative volvulus and its laparoscopic management following laparoscopic Ladd's procedure in pediatric patients with intestinal malrotation: a single-center, retrospective cohort study. J Pediatr Surg 60:162356. https://doi.org/10.1016/j.jpedsurg.2025.162356
+7. Arnaud AP, Suply E, Eaton S, Blackburn SC, Giuliani S, Curry JI, et al (2019) Laparoscopic Ladd's procedure for malrotation in infants and children is still a controversial approach. J Pediatr Surg 54:1843-1847. https://doi.org/10.1016/j.jpedsurg.2018.09.023
+8. El-Gohary Y, Alagtal M, Gillick J (2010) Long-term complications following operative intervention for intestinal malrotation: a 10-year review. Pediatr Surg Int 26:203-206. https://doi.org/10.1007/s00383-009-2483-y
+9. Salehi Karlslätt K, Husberg B, Ullberg U, Nordenskjöld A, Wester T (2024) Intestinal malrotation in children: clinical presentation and outcomes. Eur J Pediatr Surg 34:228-235. https://doi.org/10.1055/s-0043-1764239
+10. Eksarko P, Nazir S, Kessler E, LeBlanc P, Zeidman M, Asarian AP, et al (2013) Duodenal web associated with malrotation and review of literature. J Surg Case Rep 2013:rjt110. https://doi.org/10.1093/jscr/rjt110
+11. Gomaa IA, Mirande MD, Armenia SJ, Aboelmaaty S, Dozois EJ, Perry WRG (2024) Intestinal malrotation in the adult population: diagnosis, management, and outcomes after laparoscopic Ladd procedure. J Gastrointest Surg 28:1339-1343. https://doi.org/10.1016/j.gassur.2024.05.024
+12. Xie W, Li Z, Wang Q, Wang L, Pan Y, Lu C (2022) Laparoscopic vs open Ladd's procedure for malrotation in neonates and infants: a propensity score matching analysis. BMC Surg 22:25. https://doi.org/10.1186/s12893-022-01487-1
+13. Skertich NJ, Ingram MC, Grunvald M, Ritz E, Pillai S, Madonna MB, et al (2021) Outcomes of laparoscopic versus open Ladd procedures and risk factors for conversion. J Laparoendosc Adv Surg Tech A 31:336-342. https://doi.org/10.1089/lap.2020.0712
+14. Zeng X, Lian N, Wang X, Du D (2025) Abnormal anatomical landmarks: the guide points of laparoscopic Ladd's surgery for neonatal congenital intestinal malrotation. Surg Endosc 39:4386-4391. https://doi.org/10.1007/s00464-025-11764-8
+15. von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP; STROBE Initiative (2007) The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. Lancet 370:1453-1457. https://doi.org/10.1016/S0140-6736(07)61602-X
+16. Byrt T, Bishop J, Carlin JB (1993) Bias, prevalence and kappa. J Clin Epidemiol 46:423-429. https://doi.org/10.1016/0895-4356(93)90018-V
+17. Newcombe RG (1998) Interval estimation for the difference between independent proportions: comparison of eleven methods. Stat Med 17:873-890. https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8<873::AID-SIM779>3.0.CO;2-I
+18. Holm S (1979) A simple sequentially rejective multiple test procedure. Scand J Stat 6:65-70.
+19. Aalen OO, Johansen S (1978) An empirical transition matrix for non-homogeneous Markov chains based on censored observations. Scand J Stat 5:141-150.
+20. Firth D (1993) Bias reduction of maximum likelihood estimates. Biometrika 80:27-38. https://doi.org/10.1093/biomet/80.1.27
+21. VanderWeele TJ, Ding P (2017) Sensitivity analysis in observational research: introducing the E-value. Ann Intern Med 167:268-274. https://doi.org/10.7326/M16-2607
+22. Bass KD, Rothenberg SS, Chang JH (1998) Laparoscopic Ladd's procedure in infants with malrotation. J Pediatr Surg 33:279-281. https://doi.org/10.1016/S0022-3468(98)90447-X
+23. da Costa KM, Saxena AK (2021) Laparoscopic Ladd procedure for malrotation in newborns and infants. Am Surg 87:253-258. https://doi.org/10.1177/0003134820951424
+24. Takamoto N, Aso S, Konishi T, Fujiogi M, Kutsukake M, Yanagida Y, et al (2026) Effect of adhesion barrier use during Ladd procedure for intestinal malrotation on postoperative midgut volvulus and postoperative small-bowel obstruction: a retrospective cohort study using a national inpatient database. J Am Coll Surg 242:1279-1288. https://doi.org/10.1097/XCS.0000000000001693
+25. Austin PC (2009) Balance diagnostics for comparing the distribution of baseline covariates between treatment groups in propensity-score matched samples. Stat Med 28:3083-3107. https://doi.org/10.1002/sim.3697
 
 <!--pagebreak-->
