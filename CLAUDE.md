@@ -89,8 +89,47 @@ Ped Surg Int 无此规定，补充材料按通行惯例**合成单一文件**
 Cause and Operative Mechanism of Early Unplanned Reoperation After Primary
 Ladd Procedure: A Blinded Adjudication Study of 450 Children
 
-**尚未做**：补充材料派生 Ped Surg Int 版、STROBE 清单换新题目、
-投稿包生成脚本改造（卡在「表格是否单独成文件」这一未知项上）。
+### Ped Surg Int 投稿上传清单
+
+| 上传项 | 文件 | 生成方式 |
+|---|---|---|
+| 正文（**含表含图的单一文件**）| `PedSurgInt_submission.docx` | `make_submission_pedsurgint.py` |
+| 补充材料（单一整合文件）| `Supplementary_Material_PedSurgInt.docx` | `md2docx_v2.py` |
+| 图（供排版用）| `Fig1.eps` / `Fig2.eps` / `FigS1.tif` / `FigS2.eps` | `make_submission_figures.py`（产物已 gitignore）|
+| 推介信 | `Cover_letter_PedSurgInt.docx` | `md2docx_v2.py` |
+| STROBE 清单 | `STROBE_checklist.docx` | 已有 |
+| ICMJE COI 表 | 每位作者一份 | ⚠️ 需作者自行填写 |
+
+**与 Surg Endosc 的打包方式正好相反，勿混用脚本**：Surg Endosc 要求表格与图
+各自单独上传（`make_submission_files.py`，**已停用**）；Ped Surg Int 要求
+「Figures should be submitted within the body of the text」，Tables 一节亦未
+要求单独上传，故产出**一个含表含图的完整 docx**，每张表／图插在正文**首次
+引用它的那一段之后**（表题在表上方、图注在图下方）。
+
+**改动 `PedSurgInt_manuscript_v1.md` 后须重跑 `make_submission_pedsurgint.py`。**
+主稿本身保持「表图集中在文末」的版面不变——全部审计脚本都依赖该版面，
+插入只发生在打包这一步。
+
+### 已按该刊 Artwork/Tables 规定做过的合规改动（勿回退）
+
+1. **图内不得有标题或图注**：四个出图脚本的 `set_title` 与底部说明文字已全部
+   移除，内容都在稿件图注里。分图标号用**小写** a/b。
+2. **图片格式**：Fig 1/2/S2 出**矢量 EPS**（该刊对矢量图的首选，且不受 dpi
+   门槛约束）；FigS1 因置信带用 alpha 透明、EPS 不支持，改 **600 dpi TIFF**。
+   注意 `ps.fonttype=42` 必须放在 PDF 保存**之后**，否则本机 matplotlib 写 PDF
+   会抛 `ValueError: bytes must be in range(0, 256)`。
+3. **表格脚注标记**：† ‡ § → **上标小写字母**（`^a^` 语法，md2docx 已支持）；
+   星号保留（官方允许用于 significance values 与其它统计量）。
+   ⚠️ 批量替换 § 时**务必避开正文小节引用**（§2.5、§4 等），曾经误伤。
+4. **图注格式**：粗体 `Fig. N` 开头、编号后无标点、caption 末尾无标点；
+   正文内引用亦作 `Fig. N`。补充材料的图注未改（单独文件，不进期刊校对）。
+5. **表格编号顺序**：官方要求按连续编号顺序被引用。原 Table 3/4 已**对调编号**
+   （现 Table 3 = 总体率与敏感性分析，Table 4 = 年龄分层），且 §2.5 的两处
+   前向引用改为小节号。**`stratified_analysis.py` 里写死的表号已同步**，
+   重跑不会产出旧编号。
+
+**仍未做**：参考文献格式（须改为 Springer 式：作者后接年份括号、刊名不斜体、
+卷:页去期号、附 DOI 全链接），25 条全部要改，DOI 需逐条查证。
 ### Surg Endosc 官方投稿规定（已据官方 PDF「Instructions for Authors」2025-07 版核实）
 
 **此前一度采用的「摘要 250 / 正文 3500 / 图表 6 / 文献 35」是错的**——那组数字来自

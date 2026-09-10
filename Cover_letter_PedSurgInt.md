@@ -20,7 +20,7 @@ We submit for your consideration a single-center cohort of 450 children who unde
 
 **Limitations.** The study is single-center and retrospective; the age stratification was post hoc with data-driven cut-points; and because no open-related child had this outcome, the odds ratio is not estimable, so we report risk differences as the interpretable measure throughout. We state each of these in the manuscript rather than leave them to a reviewer, and we present the comparison as hypothesis-generating for a prospective multicenter study — not as a case against laparoscopy, whose patients here were a systematically less severe group.
 
-The manuscript is 4205 words of main text with a 194-word structured abstract, 4 tables, 2 figures, and supplementary material comprising 5 tables and 2 figures. It is reported in accordance with STROBE; the completed checklist accompanies this submission.
+The manuscript is 4201 words of main text with a 194-word structured abstract, 4 tables, 2 figures, and supplementary material comprising 5 tables and 2 figures. It is reported in accordance with STROBE; the completed checklist accompanies this submission.
 
 We confirm that this work is original, unpublished, and not under consideration elsewhere; that all authors have approved the submission; that the study was approved by the Ethics Committee of Wuhan Children's Hospital (approval no. 2026R018-E01) with informed consent waived owing to the retrospective design; that the authors have no conflicts of interest; and that the study received no specific funding. Jun Shu and Kai Zheng contributed equally and are listed as co-first authors.
 
