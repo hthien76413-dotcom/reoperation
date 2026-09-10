@@ -40,8 +40,32 @@
   这意味着问题出在标题、摘要与 cover letter，正文论证未被读到。
   原 cover letter 以「预设比较阴性 / 分层是事后 / 结果对单个事件不稳健」三条开篇，
   对审稿人是诚实，对分诊编辑等于代写拒稿理由。
-- **当前目标刊：Surgical Endoscopy**。选刊依据是文献 [23]（现 [14]）
-  Zeng 2025 发在该刊，同病同术式同年龄段；本稿是「未按标志确认会怎样」的临床续篇。
+- **Surgical Endoscopy 已拒稿（2026-09-03，SEND-D-26-02727）**。主编 Mark Talamini 签发，
+  「after an initial evaluation by two members of the editorial board」——**同样没送外审**，
+  且模板信里未给任何具体理由。至此连续两刊都止步于送审前，说明问题反复出在
+  标题/摘要/cover letter 这一层，不是正文论证。原选刊依据（本稿是 Zeng 2025 的临床续篇）
+  只对 Surg Endosc 有效，换刊后失效。
+
+- **当前目标刊：Pediatric Surgery International（Springer，IF 1.8，JCR Q2 外科）**。
+  选刊依据：文献 [2] Catania 2016、[8] El-Gohary 2010 两篇同类研究均发在该刊；
+  本稿本质是儿外科**结局/病因**研究而非内镜技术创新论文，与该刊定位吻合。
+  混合期刊，**选订阅模式则零版面费**（OA 可选，£2890/$4390/€3390）；
+  中国大陆作者无强制 OA 政策。录用后系统会让通讯作者二选一，**务必选 subscription**。
+
+### Ped Surg Int 投稿规定（据官方 submission guidelines 检索摘要，link.springer.com 被本环境网络策略屏蔽，**未能逐字打开官方页面，投稿前须自行复核**）
+
+| 项目 | 官方要求 | 本稿现状 |
+|---|---|---|
+| 摘要 | **≤200 词**，四段 **Purpose / Methods / Results / Conclusion** | 194 词（含小标题 198）✅ 已改 |
+| 关键词 | **4–6 个** | 6 个 ✅ |
+| 正文格式 | Word，10 号 Times Roman | 待调字号 |
+| Declarations | 置于参考文献**之前**，含 Funding / Competing interests / Ethics approval / Consent / Data availability / Authors' contribution | ⚠️ 现为多个独立小节，待重排 |
+| 作者贡献 + 利益冲突 | **必须在投稿系统界面填写**，只有系统内填的进最终版 | ⚠️ 投稿时需在网站另填 |
+| 图 | 矢量图 EPS / 半色调 TIFF | 已有 TIFF ✅ |
+| 文章类型 | 不收 case report | Original Article ✅ |
+
+**仍未查到、须作者自行核实**：正文字数上限、参考文献条数上限、图表数量上限、
+表格是否须单独成文件（Surg Endosc 要求单独上传，本刊未知）。
 ### Surg Endosc 官方投稿规定（已据官方 PDF「Instructions for Authors」2025-07 版核实）
 
 **此前一度采用的「摘要 250 / 正文 3500 / 图表 6 / 文献 35」是错的**——那组数字来自
