@@ -52,9 +52,30 @@ agencies in the public, commercial, or not-for-profit sectors."），两者都�
 
 > Not applicable; no individually identifiable data are reported.
 
-## 7. Data availability（如有该栏）
+## 7. Data availability
+
+系统里这是**一屏专门的问答**，不只是一个文本框。页面会先问
+「你在这项研究中使用过或生成过研究数据吗？」，并提醒
+「你选择的选项必须与你的手稿文件一致」。逐层选法：
+
+**第一问：是否使用/生成了研究数据？** → 选 **「是的。我在这项研究中使用或
+生成了研究数据。」**
+
+本研究分析了 450 例患儿的临床病历，属典型的"使用了研究数据"。
+「不适用」那一项是给综述、评论、社论这类不报告数据分析的稿件用的；
+本稿 Declarations 里有完整的 Data availability 段，选「不适用」会与稿件
+直接矛盾，必被编辑部质询。
+
+**第二问：数据是否已存入公开仓库？** → 选 **否 / 不公开存放**。
+原始数据是儿童临床资料，含敏感信息，不得公开（见本仓库 CLAUDE.md 的数据纪律）。
+
+**第三问：数据可用性声明正文** → 原样粘贴下面这段（与稿件 Declarations 逐字一致）：
 
 > The data that support the findings of this study are not publicly available because they contain information that could compromise the privacy of the children studied. De-identified aggregate data are available from the corresponding author on reasonable request, subject to institutional approval.
+
+**若系统给的是预设分类而非自由文本框** → 选
+**"Data available on request due to privacy/ethical restrictions"**
+（因隐私或伦理限制，数据可应要求提供）。这一类与上面那段话对应。
 
 ---
 
