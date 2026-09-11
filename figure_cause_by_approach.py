@@ -142,7 +142,7 @@ ax.legend(handles=[Patch(facecolor=C_LAP, label=f"Laparoscopic completion (n={N_
 # 下方留白相应收窄（原 rect 底边 0.082 是为这两行预留的）。
 
 fig.tight_layout(rect=[0, 0, 1, 0.99])
-fig.savefig("FigureS2_cause_by_approach.png", dpi=300, facecolor=SURFACE)
+fig.savefig("FigureS2_cause_by_approach.png", dpi=600, facecolor=SURFACE)
 fig.savefig("FigureS2_cause_by_approach.pdf", facecolor=SURFACE)
 # ps.fonttype=42 让 TrueType 字体嵌入 EPS，满足官方「Vector graphics containing
 # fonts must have the fonts embedded」。必须放在 PDF 保存【之后】：本机 matplotlib

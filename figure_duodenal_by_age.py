@@ -137,7 +137,7 @@ PCT_LAP_OLD = sum(1 for p in _o_all if is_lap(p)) / len(_o_all) * 100
 # 下方留白相应收窄（原 bottom=0.255 是为这两行预留的）。
 
 fig.subplots_adjust(left=0.055, right=0.985, top=0.845, bottom=0.165)
-fig.savefig("Figure2_duodenal_by_age.png", dpi=300, facecolor=SURFACE)
+fig.savefig("Figure2_duodenal_by_age.png", dpi=600, facecolor=SURFACE)
 fig.savefig("Figure2_duodenal_by_age.pdf", facecolor=SURFACE)
 # ps.fonttype=42 让 TrueType 字体嵌入 EPS，满足官方「Vector graphics containing
 # fonts must have the fonts embedded」。必须放在 PDF 保存【之后】：本机 matplotlib

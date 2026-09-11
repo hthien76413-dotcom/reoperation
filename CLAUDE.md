@@ -95,7 +95,7 @@ Ladd Procedure: A Blinded Adjudication Study of 450 Children
 |---|---|---|
 | 正文（**含表含图的单一文件**）| `PedSurgInt_submission.docx` | `make_submission_pedsurgint.py` |
 | 补充材料（单一整合文件）| `Supplementary_Material_PedSurgInt.docx` | `md2docx_v2.py` |
-| 图（供排版用）| `Fig1.eps` / `Fig2.eps` / `FigS1.tif` / `FigS2.eps` | `make_submission_figures.py`（产物已 gitignore）|
+| 图（供排版用）| `Fig1.png` / `Fig2.png` / `FigS1.png` / `FigS2.png` | `make_submission_figures.py`（产物已 gitignore）|
 | 推介信 | `Cover_letter_PedSurgInt.docx` | `md2docx_v2.py` |
 | STROBE 清单 | `STROBE_checklist.docx` | 已有 |
 | ICMJE COI 表 | `ICMJE_<姓名>.docx` ×5 | `make_icmje_forms.py`（产物已 gitignore）⚠️ 仍需各作者自查并签名 |
@@ -131,10 +131,25 @@ Endosc 系统下载，正文不含刊名，任何期刊通用）。13 项披露�
 
 1. **图内不得有标题或图注**：四个出图脚本的 `set_title` 与底部说明文字已全部
    移除，内容都在稿件图注里。分图标号用**小写** a/b。
-2. **图片格式**：Fig 1/2/S2 出**矢量 EPS**（该刊对矢量图的首选，且不受 dpi
-   门槛约束）；FigS1 因置信带用 alpha 透明、EPS 不支持，改 **600 dpi TIFF**。
+2. **图片格式**：**2026-09-11 按作者要求全部改为 PNG**。此前是 Fig 1/2/S2 出
+   矢量 EPS、FigS1 出 600 dpi TIFF，那更贴合官方首选（"For vector graphics,
+   the preferred format is EPS; for halftones, please use TIFF"）。PNG 不在
+   官方那句话里，属让步选择，**故位图分辨率必须足量，不能再靠矢量绕开 dpi
+   门槛**：
+   - **Fig1 = 1200 dpi**（流程图是纯 line art，官方 line art 门槛就是 1200，
+     不是 600）。PNG 对大面积纯色压缩率极高，1200 dpi 也只有 1.9 MB；当初
+     走 EPS 正是因为同分辨率的**无压缩 TIFF** 会到数百 MB。
+   - **Fig2 / FigS1 / FigS2 = 600 dpi**（combination art）。
+   四个出图脚本的 savefig dpi 已相应上调（原为 300，FigS1 原已是 600）。
+   `make_submission_figures.py` 只**校验** dpi、不重采样——放大低分辨率位图
+   不增加信息，只会骗过检查。PNG 一律合成白底转 RGB（RGBA 的透明区在部分
+   排版软件里会渲染成黑色）。
+   **若系统因格式退回**：`do_eps` / `do_tiff` 两个函数都保留着，把 `FIGURES`
+   的格式字段改回 eps（Fig1/Fig2/FigS2）与 tif（FigS1）重跑即可。
    注意 `ps.fonttype=42` 必须放在 PDF 保存**之后**，否则本机 matplotlib 写 PDF
    会抛 `ValueError: bytes must be in range(0, 256)`。
+   提高源 PNG 的 dpi 后，主稿与补充材料的 docx 需重新生成（内嵌图会换成高清
+   版，正文 docx 由 0.6 MB 增至 2.1 MB，显示尺寸不变，仍为 6.30 英寸宽）。
 3. **表格脚注标记**：† ‡ § → **上标小写字母**（`^a^` 语法，md2docx 已支持）；
    星号保留（官方允许用于 significance values 与其它统计量）。
    ⚠️ 批量替换 § 时**务必避开正文小节引用**（§2.5、§4 等），曾经误伤。
