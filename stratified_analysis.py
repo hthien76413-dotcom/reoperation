@@ -12,7 +12,7 @@
   Table_baseline_v2.md      Table 1（年龄取值修正 + 新生儿改真实年龄 + 年龄分段行）
   Table_cause_v2.md         Table 2（病因×入路，补精确 95%CI 与 Holm 校正 p）
   Table_stratified.md       新表：十二指肠持续梗阻与总体率，按年龄分层 × 入路
-  Table_sensitivity_v2.md   Table 4（Firth 惩罚 LRT 修正 + 年龄校正）
+  Table_sensitivity_v2.md   Table 3（Firth 惩罚 LRT 修正 + 年龄校正）
   stratified_out.txt        中文核对底稿
 """
 import io, math
@@ -252,16 +252,16 @@ T3.append("\\* Fisher exact test on rates with the full cohort as the denominato
           "across the six cause-specific comparisons. No open-related child had a persistent duodenal obstruction, so that "
           "odds ratio is not estimable and only the one-sided lower bound is informative; the comparison rests on %d events. "
           "The cause-specific comparison for persistent duodenal obstruction is confounded by age and is presented "
-          "stratified in Table 3." % (len(LAP), len(OPR), n_duo))
+          "stratified in Table 4." % (len(LAP), len(OPR), n_duo))
 T3.append("† Coexisting malformation first identified or confirmed at reoperation: duodenal membrane 3, multiple jejunal atresia 1.")
 T3.append("‡ Wound dehiscence 2, stress-ulcer bleeding 2, stoma prolapse 1.")
 io.open("Table_cause_v2.md", "w", encoding="utf-8").write("\n".join(T3))
 for x in T3: log(x)
 
 
-# ================================================================ 新 Table 3：分层
-log(""); log("=" * 78); log("新 Table 3：按年龄分层"); log("=" * 78)
-T4 = ["**Table 3.** Persistent duodenal obstruction and overall unplanned reoperation, "
+# ================================================================ 新 Table 4：分层
+log(""); log("=" * 78); log("新 Table 4：按年龄分层"); log("=" * 78)
+T4 = ["**Table 4.** Persistent duodenal obstruction and overall unplanned reoperation, "
       "stratified by age at the index operation.", "",
       "| Age stratum | Outcome | Laparoscopic completion | Open-related | OR (exact 95% CI) | p\\* |",
       "|---|---|---|---|---|---|"]
@@ -314,8 +314,8 @@ log("14 例十二指肠持续梗阻的年龄（天）：%s" % sorted(int(AGED[p]
     if A[p]["cause"] == "十二指肠持续梗阻" and AGED.get(p) is not None))
 
 
-# ================================================================ Table 4
-log(""); log("=" * 78); log("Table 4（总体率 + 校正/敏感性，Firth 已修正）"); log("=" * 78)
+# ================================================================ Table 3
+log(""); log("=" * 78); log("Table 3（总体率 + 校正/敏感性，Firth 已修正）"); log("=" * 78)
 
 CONV = [p for p in malrot if approach(first[p]) == "中转开腹"]
 OPEN = [p for p in malrot if approach(first[p]) == "开腹"]
@@ -364,7 +364,7 @@ def cox(evcode):
     return math.exp(m.params_["lap"]), math.exp(ci.iloc[0]), math.exp(ci.iloc[1]), m.summary.loc["lap", "p"]
 hr1 = cox(1); hr2 = cox(2)
 
-T5 = ["**Table 4.** Overall unplanned reoperation rate by index approach, with adjusted and sensitivity analyses.", "",
+T5 = ["**Table 3.** Overall unplanned reoperation rate by index approach, with adjusted and sensitivity analyses.", "",
       "| Analysis | Estimate | 95% CI | p |", "|---|---|---|---|"]
 for nm, ps in [("Laparoscopic completion", LAP), ("Conversion to open", CONV), ("Open", OPEN), ("**All children**", malrot)]:
     x = sum(1 for p in ps if p in R); lo, hi = wilson(x, len(ps))
@@ -411,7 +411,7 @@ T5.append("| Era effect within laparoscopic group (≤%d vs. >%d) | %.1f%% vs. %
           % (med, med, xe / len(ea) * 100, xl / len(la) * 100,
              fisher_p(xe, len(ea) - xe, xl, len(la) - xl)))
 
-# 三行补算：Results/Methods 里点名的敏感性分析，此前只有文字声称、Table 4 无对应数值
+# 三行补算：Results/Methods 里点名的敏感性分析，此前只有文字声称、Table 3 无对应数值
 # （2026-07-28 审稿意见指出）。三者都用本文件已有的口径（Fisher 精确/条件精确 CI/Firth）。
 STAT = all_statuses()
 _planned = {p for p, s in STAT.items() if s == "排除-计划性" and p in set(malrot)}
@@ -485,7 +485,7 @@ T5.append("Adjustment for age attenuates the estimate (from OR %.1f unadjusted t
           "predicts both the outcome and the choice of approach. These are penalized estimates under complete "
           "separation—no open-related child had this outcome—so they should be read as evidence of direction, not "
           "as effect sizes: the confidence intervals span more than two orders of magnitude%s. "
-          "The age-stratified analysis in Table 3 shows where the association actually lies."
+          "The age-stratified analysis in Table 4 shows where the association actually lies."
           % (_or0, min(_adj), max(_adj), _unity_clause(_nunit)))
 io.open("Table_sensitivity_v2.md", "w", encoding="utf-8").write("\n".join(T5))
 for x in T5: log(x)

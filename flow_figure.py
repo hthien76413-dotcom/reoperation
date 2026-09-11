@@ -163,7 +163,17 @@ ax.text(CX, 1.05,
         ha="center", fontsize=8.0, style="italic", color="#555", linespacing=1.3)
 
 fig.tight_layout()
-fig.savefig("Figure1_flow_EN.png", dpi=300)
+# dpi=1200：本图是纯线条图（矩形框+连线+文字，无半色调），Ped Surg Int 对
+# line art 的位图下限是 1200 dpi（combination art 才是 600）。PNG 对这种
+# 大面积纯色的压缩率很高，1200 dpi 也只有几 MB；同分辨率的无压缩 TIFF 会
+# 达数百 MB，这正是当初 Figure 1 走 EPS 的原因。
+fig.savefig("Figure1_flow_EN.png", dpi=1200)
 fig.savefig("Figure1_flow_EN.pdf")
+# ps.fonttype=42 让 TrueType 字体嵌入 EPS，满足官方「Vector graphics containing
+# fonts must have the fonts embedded」。必须放在 PDF 保存【之后】：本机 matplotlib
+# 在该参数生效时写 PDF 会抛 ValueError: bytes must be in range(0, 256)
+# （字体子集化的共用代码路径所致），只影响 PDF，不影响 EPS 本身。
+matplotlib.rcParams["ps.fonttype"] = 42
+fig.savefig("Figure1_flow_EN.eps")   # 矢量投稿版
 print(f"n_surg={n_surg}  cohort={n_cohort}  lap={n_lap}/{r_lap}  conv={n_conv}/{r_conv}  open={n_open}/{r_open}")
 print("saved Figure1_flow_EN.png / .pdf")

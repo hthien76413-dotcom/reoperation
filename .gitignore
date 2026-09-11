@@ -1,0 +1,28 @@
+# 投稿用图由 make_submission_figures.py 从出图脚本的产物转出，可复现，不入库。
+# 出图脚本自身的产物（Figure*_*.png/.pdf/.eps）仍然入库，便于比对与追溯。
+*.tif
+*.tiff
+Fig1.eps
+Fig2.eps
+FigS1.eps
+FigS2.eps
+
+# Python 字节码缓存
+__pycache__/
+*.pyc
+
+# ICMJE 表由 make_icmje_forms.py 从模板填出，可复现，不入库（模板本身入库）
+ICMJE_Jun_Shu.docx
+ICMJE_Kai_Zheng.docx
+ICMJE_Hongqiang_Bian.docx
+ICMJE_Jun_Yang.docx
+ICMJE_Xin_Wang.docx
+
+# 投稿图改为 PNG 后的产物（2026-09-11）
+Fig1.png
+Fig2.png
+FigS1.png
+FigS2.png
+# Fig1.png 的像素数（11520x8880）超过对话文件通道对图片的上限，直接发会被退回
+# 400，故打包后传给作者。压缩包同为可复现产物，不入库。
+Fig1_png.zip
