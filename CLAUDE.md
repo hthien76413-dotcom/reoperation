@@ -98,7 +98,24 @@ Ladd Procedure: A Blinded Adjudication Study of 450 Children
 | 图（供排版用）| `Fig1.eps` / `Fig2.eps` / `FigS1.tif` / `FigS2.eps` | `make_submission_figures.py`（产物已 gitignore）|
 | 推介信 | `Cover_letter_PedSurgInt.docx` | `md2docx_v2.py` |
 | STROBE 清单 | `STROBE_checklist.docx` | 已有 |
-| ICMJE COI 表 | 每位作者一份 | ⚠️ 需作者自行填写 |
+| ICMJE COI 表 | `ICMJE_<姓名>.docx` ×5 | `make_icmje_forms.py`（产物已 gitignore）⚠️ 仍需各作者自查并签名 |
+| 系统内填写用文本 | `Submission_system_statements_PedSurgInt.md/.docx` | 手写，非上传件，供复制粘贴 |
+
+**Author Contribution 与 Competing Interest 必须在 Editorial Manager 界面里另填，
+且只有系统内填的那一版进入最终发表的文章**，故已把两段（连同 Funding / Ethics /
+Consent / Data availability / 共同一作说明）整理进
+`Submission_system_statements_PedSurgInt.md`，与稿件 Declarations **逐字一致**，
+直接整段粘贴、不要改写。为此已把稿件里 Competing interests 的措辞改成 Springer
+模板用语「The authors have no relevant financial or non-financial interests to
+disclose.」（原句只提 conflicts of interest 与 financial ties，未覆盖非经济利益）。
+
+ICMJE 表用的是通用短表模板 `ICMJE_Disclosure_Form_template.docx`（当初从 Surg
+Endosc 系统下载，正文不含刊名，任何期刊通用）。13 项披露一律填 None，签署日期与
+稿号写在 `make_icmje_forms.py` 的 `SIGN_DATE` / `MS_NUMBER` 里，改完重跑即可。
+**Springer 公开指南只要求正文 Declarations 段，未见明文要求上传 ICMJE 表**，备用而已。
+作者签名前最易漏报的是第 10 项（学会/委员会任职，有偿无偿均须申报）与第 2 项
+（任何来源的科研经费，含院内课题）；任一作者确有申报事项，须同时改表、改系统
+填写文本、改稿件 Declarations 三处。
 
 **与 Surg Endosc 的打包方式正好相反，勿混用脚本**：Surg Endosc 要求表格与图
 各自单独上传（`make_submission_files.py`，**已停用**）；Ped Surg Int 要求

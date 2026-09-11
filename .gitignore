@@ -10,3 +10,10 @@ FigS2.eps
 # Python 字节码缓存
 __pycache__/
 *.pyc
+
+# ICMJE 表由 make_icmje_forms.py 从模板填出，可复现，不入库（模板本身入库）
+ICMJE_Jun_Shu.docx
+ICMJE_Kai_Zheng.docx
+ICMJE_Hongqiang_Bian.docx
+ICMJE_Jun_Yang.docx
+ICMJE_Xin_Wang.docx

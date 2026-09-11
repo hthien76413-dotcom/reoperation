@@ -249,7 +249,7 @@ None.
 
 **Funding.** This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 
-**Competing interests.** Jun Shu, Kai Zheng, Hongqiang Bian, Jun Yang, and Xin Wang have no conflicts of interest or financial ties to disclose.
+**Competing interests.** The authors have no relevant financial or non-financial interests to disclose.
 
 **Ethics approval.** Approved by the Ethics Committee of Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital), Tongji Medical College, Huazhong University of Science & Technology (approval no. 2026R018-E01). The study was performed in accordance with the ethical standards of the institutional research committee and with the 1964 Declaration of Helsinki and its later amendments.
 
