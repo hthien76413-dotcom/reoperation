@@ -268,7 +268,7 @@ None.
 
 1. Nehra D, Goldstein AM (2011) Intestinal malrotation: varied clinical presentation from infancy through adulthood. Surgery 149:386-393. https://doi.org/10.1016/j.surg.2010.07.004
 2. Catania VD, Lauriti G, Pierro A, Zani A (2016) Open versus laparoscopic approach for intestinal malrotation in infants and children: a systematic review and meta-analysis. Pediatr Surg Int 32:1157-1164. https://doi.org/10.1007/s00383-016-3974-2
-3. Lang Y, Chen Q, Wu M, Chen G, Liu W, Yuan C (2026) Laparoscopic vs open Ladd's procedure for intestinal malrotation in infants and children: a systematic review and meta-analysis. Surg Innov 15533506261460156.
+3. Lang Y, Chen Q, Wu M, Chen G, Liu W, Yuan C (2026) Laparoscopic vs open Ladd's procedure for intestinal malrotation in infants and children: a systematic review and meta-analysis. Surg Innov 15533506261460156. https://doi.org/10.1177/15533506261460156
 4. Zhang Z, Chen Y, Yan J (2022) Laparoscopic versus open Ladd's procedure for intestinal malrotation in infants and children: a systematic review and meta-analysis. J Laparoendosc Adv Surg Tech A 32:204-212. https://doi.org/10.1089/lap.2021.0436
 5. Johnston WR, Hwang R, Mattei P (2024) Laparoscopic versus open Ladd procedure for midgut malrotation. J Pediatr Surg 59:161673. https://doi.org/10.1016/j.jpedsurg.2024.08.013
 6. Duy HP, Manh HV, Tran NX, Yoshimura S, Okata Y (2025) Risk factors for postoperative volvulus and its laparoscopic management following laparoscopic Ladd's procedure in pediatric patients with intestinal malrotation: a single-center, retrospective cohort study. J Pediatr Surg 60:162356. https://doi.org/10.1016/j.jpedsurg.2025.162356

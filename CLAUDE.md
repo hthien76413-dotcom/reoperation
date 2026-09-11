@@ -129,13 +129,15 @@ Ladd Procedure: A Blinded Adjudication Study of 450 Children
    重跑不会产出旧编号。
 
 6. **参考文献格式**：已由 Vancouver/AMA 改为 Springer 式——作者后接（年份）、
-   刊名不斜体、卷:页去期号、附 DOI 全链接。25 条中 **22 条已附 DOI**，
+   刊名不斜体、卷:页去期号、附 DOI 全链接。25 条中 **23 条已附 DOI**，
    均取自本轮检索结果中可见的 URL 或页面文本，**未核实者一律留空**
    （官方原文 "If available, please always include DOIs"，允许缺省）。
-   无 DOI 的三条及原因：
-   - **[3] Lang 2026 *Surg Innov***：⚠️ 反复检索均**无法确认该文献存在**，
-     而它是全篇被引最多（6 次）、且承载 OR 1.67 这一具体数值的文献。
-     **投稿前必须由作者自行核实**，这是目前最大的单点风险。
+   **[3] Lang 2026 *Surg Innov* 已于 2026-09-11 核实存在**（此前多轮检索未果，
+   一度列为最大单点风险，现已解除）：PMID 42264504，DOI 10.1177/15533506261460156，
+   online first 文章号 15533506261460156。所引数据亦已对上——18 项研究 3479 例
+   （腹腔镜 928 / 开腹 2551），腹腔镜粘连性肠梗阻更少（OR 0.44）但术后肠扭转与
+   **再手术更多（OR 1.67，P=0.03）**，即正文 §4 所引之值。DOI 已补入文献表。
+   无 DOI 的两条及原因：
    - **[18] Holm 1979**、**[19] Aalen–Johansen 1978**：DOI 制度之前的旧文，
      仅有 JSTOR stable URL（如 jstor.org/stable/4615733），确无 DOI。
 ### Surg Endosc 官方投稿规定（已据官方 PDF「Instructions for Authors」2025-07 版核实）
