@@ -8,7 +8,7 @@
 
 Dear Editors,
 
-We submit for your consideration a single-center cohort of 450 children who underwent a primary Ladd procedure between December 2012 and June 2026 — roughly twice the size of the largest published comparison of the two operative approaches (226 children; *J Pediatr Surg* 2024;59:161673) — in which the cause and the operative mechanism of every early unplanned reoperation were adjudicated under blinding.
+We submit for your consideration a single-center cohort of 450 children who underwent a primary Ladd procedure between December 2012 and June 2026 — larger than any single-center comparison of the two operative approaches we have been able to find (the largest, 226 children; *J Pediatr Surg* 2024;59:161673) — in which the cause and the operative mechanism of every early unplanned reoperation were adjudicated under blinding. National database analyses of this operation are larger still, but they carry only the fact of a reoperation; ours carries the reason for it, read from the operative record.
 
 **What is new.** Cause was adjudicated, not abstracted. Two reviewers independently assigned a single cause to every reoperation with all approach-identifying wording masked (κ=0.90). A separate blinded pass then classified the *mechanism* of each duodenal reoperation — technical deficiency of the index procedure versus postoperative adhesion — from the operative narratives alone, with complete agreement on all 12 cases and no access to age or index approach. Eligibility and exposure were adjudicated in two further independent blinded passes. We are not aware of a previous series of this operation that has separated cause from mechanism in this way, and it is that separation, rather than another rate comparison, that produced our principal finding.
 
@@ -20,16 +20,16 @@ We submit for your consideration a single-center cohort of 450 children who unde
 
 **Limitations.** The study is single-center and retrospective; the age stratification was post hoc with data-driven cut-points; and because no open-related child had this outcome, the odds ratio is not estimable, so we report risk differences as the interpretable measure throughout. We state each of these in the manuscript rather than leave them to a reviewer, and we present the comparison as hypothesis-generating for a prospective multicenter study — not as a case against laparoscopy, whose patients here were a systematically less severe group.
 
-The manuscript is 4201 words of main text with a 194-word structured abstract, 4 tables, 2 figures, and supplementary material comprising 5 tables and 2 figures. It is reported in accordance with STROBE; the completed checklist accompanies this submission.
+The manuscript is 4246 words of main text with a 194-word structured abstract, 4 tables, 2 figures, and supplementary material comprising 5 tables and 2 figures. It is reported in accordance with STROBE; the completed checklist accompanies this submission.
 
-We confirm that this work is original, unpublished, and not under consideration elsewhere; that all authors have approved the submission; that the study was approved by the Ethics Committee of Wuhan Children's Hospital (approval no. 2026R018-E01) with informed consent waived owing to the retrospective design; that the authors have no conflicts of interest; and that the study received no specific funding. Jun Shu and Kai Zheng contributed equally and are listed as co-first authors.
+We confirm that this work is original, unpublished, and not under consideration elsewhere; that all authors have approved the submission; that the study was approved by the Ethics Committee of Wuhan Children’s Hospital (approval no. 2026R018-E01) with informed consent waived owing to the retrospective design; that the authors have no conflicts of interest; and that the study received no specific funding. Jun Shu and Kai Zheng contributed equally and are listed as co-first authors.
 
 We would be grateful for your consideration.
 
 Yours sincerely,
 
 **Xin Wang, MD**, on behalf of all authors
-Department of General Surgery, Wuhan Children's Hospital (Wuhan Maternal and Child Healthcare Hospital),
+Department of General Surgery, Wuhan Children’s Hospital (Wuhan Maternal and Child Healthcare Hospital),
 Tongji Medical College, Huazhong University of Science & Technology, Wuhan 430016, Hubei Province, China
 Email: wangxin@zgwhfe.com
 Tel: +86 18995563848

@@ -157,6 +157,34 @@ Endosc 系统下载，正文不含刊名，任何期刊通用）。13 项披露�
    无 DOI 的两条及原因：
    - **[18] Holm 1979**、**[19] Aalen–Johansen 1978**：DOI 制度之前的旧文，
      仅有 JSTOR stable URL（如 jstor.org/stable/4615733），确无 DOI。
+### 投稿前最终复核（2026-09-11）已改的六处
+
+审计脚本全绿（full_number_audit 17 项 0 不一致、arith_audit 30 处百分比一致、
+加总闭合、ref_audit 1–25 双向完整无 ★）。人工复核另改：
+
+1. **cover letter 的体量表述曾说错**。原句「roughly twice the size of the largest
+   published comparison (226 children)」不成立——NSQIP-Pediatric 的同类比较研究
+   有 1500 例以上，且本稿文献 [13] Skertich 2021 就是 NSQIP 研究，等于自带反例。
+   改为「larger than any **single-center** comparison … we have been able to find」，
+   并补一句把数据库研究的体量劣势转成本稿优势（它们只有再手术这个事实，
+   本稿有再手术的原因）。**此类"最大/首次"表述以后一律先查再写。**
+2. **AI 使用声明补进 Methods §2.5**。Springer 政策要求写在 Methods（无 Methods
+   才退到其它部分），原先只写在 Declarations。两处并存，措辞一致。正文字数
+   4201 → **4246**，扉页与 cover letter 的字数已同步。
+3. **`logic_checks.py` 第 2 节写死的旧数已改为现算**。原写「粘连 11 例中 10 例
+   腹腔镜、1 例开腹相关」，那是第四轮资格裁定之前的计数；该轮排除了 2 例机制
+   核阅对象，现队列为 A 技术缺陷 3 例 + C 粘连 9 例、全部腹腔镜。已直接从
+   《机制核阅_盲法_答案键.xlsx》现算，与稿件 §3.7 的 9/255、0/195 对上。
+   （这是 CLAUDE.md 早就警告过的同一类隐患，第二次出现。）
+4. **补充材料删掉残留的制图备注** *(File: FigureS1_….png / .pdf)*，
+   并把指向主稿图 2 的 "Figure 2" 改为 "Fig. 2 of the main text"。
+5. **撇号统一为弯撇号 ’**（全部四个投稿文件，原为 14 直 / 8 弯混用）；
+   **参考文献页码区间改 en dash**（20 条，与正文数字区间写法一致）。
+   替换时避开了 DOI 里的连字符（如 S0140-6736(07)61602-X），做法是只处理每行
+   " https://doi.org" 之前的部分。
+6. **Fig. 2 图注的分图标号 `**(a)**/**(b)**` 改为 `**a**/**b**`**，与图内标号
+   （`set_title("a")`）和正文引用（`Fig. 2a`）统一。
+
 ### Surg Endosc 官方投稿规定（已据官方 PDF「Instructions for Authors」2025-07 版核实）
 
 **此前一度采用的「摘要 250 / 正文 3500 / 图表 6 / 文献 35」是错的**——那组数字来自
