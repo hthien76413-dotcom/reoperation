@@ -1,4 +1,6 @@
 import math
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from _dataprep import load, approach, reop_set
 
 D = load()

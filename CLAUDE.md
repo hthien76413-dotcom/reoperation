@@ -276,9 +276,12 @@ Acknowledgments / Disclosures / References / Figure legends；Disclosures 段**�
 - step3_风险差.py：风险差 + Newcombe 区间
 - step4_Firth校正.py：Firth 惩罚似然逻辑回归，未校正/+新生儿+坏死/+年龄段+坏死 三行
 
-**这四个脚本要放进与 `_dataprep.py` 同一目录才能跑**（即仓库根目录，
-在作者本机是 `D:\全部肠旋转不良\③肠旋转不良术后再手术\`）——没有做路径
-硬编码，是为了和仓库其余脚本的既有约定一致（见下方「路径解析顺序」）。
+**2026-09-23 已改为可放进任意子文件夹运行**（作者习惯把这类代码单独归到
+`③肠旋转不良术后再手术\Python分析代码\` 下）：每个 step 开头加了
+`sys.path.insert(0, 脚本所在目录的上一级)`，自动把 `_dataprep.py`/
+`_supplements.py` 所在的仓库根目录纳入模块搜索路径，不用再手动同目录摆放。
+仅限一层子文件夹（脚本目录的上一级必须就是仓库根目录）；再深一层要相应
+改 `dirname` 的嵌套层数。
 
 `make_conclusion1_table.py` 把 step1–4 的实测结果整理成三线表（Word，仅顶线/
 表头下线/底线，无竖线），产出 `核心结论一_三线表.docx`。后续结论如需同款
