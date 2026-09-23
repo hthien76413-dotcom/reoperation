@@ -7,18 +7,21 @@ while not os.path.exists(os.path.join(_d, "_dataprep.py")):
         raise SystemExit("找不到 _dataprep.py，请确认本脚本仍在原仓库目录树下（任意层子文件夹均可）")
     _d = _p
 sys.path.insert(0, _d)
-from _dataprep import load, approach, reop_set
+from _dataprep import load, approach, reop_set, adjudicated
 
 D = load()
 R = reop_set()
+A = adjudicated()
 malrot, first = D["malrot"], D["first"]
 R = {p for p in R if p in set(malrot)}
 
 LAP = [p for p in malrot if approach(first[p]) == "腹腔镜完成"]
 OPR = [p for p in malrot if approach(first[p]) != "腹腔镜完成"]
 
-k1, n1 = sum(1 for p in LAP if p in R), len(LAP)
-k2, n2 = sum(1 for p in OPR if p in R), len(OPR)
+k1 = sum(1 for p in LAP if p in R and A[p]["cause"] == "十二指肠持续梗阻")
+n1 = len(LAP)
+k2 = sum(1 for p in OPR if p in R and A[p]["cause"] == "十二指肠持续梗阻")
+n2 = len(OPR)
 
 p1, p2 = k1 / n1, k2 / n2
 rd = p1 - p2
@@ -42,8 +45,10 @@ def newcombe(k1, n1, k2, n2, z=1.96):
 
 lo, hi = newcombe(k1, n1, k2, n2)
 
+print("十二指肠持续梗阻:")
 print("腹腔镜完成: %d/%d = %.4f" % (k1, n1, p1))
 print("开腹相关:   %d/%d = %.4f" % (k2, n2, p2))
 print("风险差 (RD) = %.4f (即 %+.2f 个百分点)" % (rd, rd * 100))
 print("95%% CI (Newcombe) = %.4f 到 %.4f (即 %+.2f 到 %+.2f 个百分点)"
       % (lo, hi, lo * 100, hi * 100))
+print("对照组事件数 c = %d -> 零单元，OR 不可估" % k2)

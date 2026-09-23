@@ -2,7 +2,13 @@ import math
 import os, sys
 import numpy as np
 from scipy import stats
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+_d = os.path.dirname(os.path.abspath(__file__))
+while not os.path.exists(os.path.join(_d, "_dataprep.py")):
+    _p = os.path.dirname(_d)
+    if _p == _d:
+        raise SystemExit("找不到 _dataprep.py，请确认本脚本仍在原仓库目录树下（任意层子文件夹均可）")
+    _d = _p
+sys.path.insert(0, _d)
 from _dataprep import load, approach, reop_set, has_necrosis
 
 D = load()

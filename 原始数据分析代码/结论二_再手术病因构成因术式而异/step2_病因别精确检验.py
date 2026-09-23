@@ -9,23 +9,24 @@ while not os.path.exists(os.path.join(_d, "_dataprep.py")):
         raise SystemExit("找不到 _dataprep.py，请确认本脚本仍在原仓库目录树下（任意层子文件夹均可）")
     _d = _p
 sys.path.insert(0, _d)
-from _dataprep import load, approach, reop_set
+from _dataprep import load, approach, reop_set, adjudicated, CAUSES6
 
 D = load()
 R = reop_set()
+A = adjudicated()
 malrot, first = D["malrot"], D["first"]
 R = {p for p in R if p in set(malrot)}
 
 LAP = [p for p in malrot if approach(first[p]) == "腹腔镜完成"]
 OPR = [p for p in malrot if approach(first[p]) != "腹腔镜完成"]
+nL, nO = len(LAP), len(OPR)
 
-a = sum(1 for p in LAP if p in R)
-b = len(LAP) - a
-c = sum(1 for p in OPR if p in R)
-d = len(OPR) - c
-
-p_fisher = stats.fisher_exact([[a, b], [c, d]])[1]
-or_crude = (a * d) / (b * c)
+EN = {"十二指肠持续梗阻": "1. Persistent duodenal obstruction",
+      "肠坏死/穿孔/吻合口并发症": "2. Necrosis / perforation / anastomotic complication",
+      "粘连性肠梗阻": "3. Adhesive obstruction (non-duodenal)",
+      "合并畸形漏诊": "4. Missed associated anomaly",
+      "肠扭转复发": "5. Recurrent volvulus / redo-Ladd",
+      "其他": "6. Other"}
 
 
 def _lc(n, k):
@@ -53,16 +54,27 @@ def exact_or_ci(a, b, c, d, alpha=0.05):
     return solve(alpha / 2, True), solve(alpha / 2, False)
 
 
-ci_lo, ci_hi = exact_or_ci(a, b, c, d)
+results = []
+for zh in CAUSES6:
+    a = sum(1 for p in LAP if p in R and A[p]["cause"] == zh)
+    c = sum(1 for p in OPR if p in R and A[p]["cause"] == zh)
+    b, d = nL - a, nO - c
+    pv = stats.fisher_exact([[a, b], [c, d]])[1]
+    lo, hi = exact_or_ci(a, b, c, d)
+    if b == 0 or c == 0:
+        if a and not c:
+            orv_str = "NE (>=%.2f)" % lo
+        elif c and not a:
+            orv_str = "NE (<=%.2f)" % hi
+        else:
+            orv_str = "NE"
+    else:
+        orv = (a * d) / (b * c)
+        orv_str = "%.4f (%.4f-%.4f)" % (orv, lo, hi)
+    results.append((zh, a, c, pv))
+    print("%-45s a=%2d c=%2d  OR = %-22s Fisher p = %.6f" % (EN[zh], a, c, orv_str, pv))
 
-print("a =", a, " b =", b, " c =", c, " d =", d)
-print("OR (crude) = %.4f" % or_crude)
-print("95%% CI (exact, Cornfield) = %.4f – %.4f" % (ci_lo, ci_hi))
-print("Fisher exact p = %.6f" % p_fisher)
-
-from scipy.stats.contingency import odds_ratio
-r = odds_ratio([[a, b], [c, d]], kind="conditional")
-lo2, hi2 = r.confidence_interval(0.95)
 print()
-print("交叉核对 scipy.stats.contingency.odds_ratio (conditional):")
-print("OR =", r.statistic, " 95% CI =", lo2, "-", hi2)
+print("六个病因的原始 p 值（未校正）:")
+for zh, a, c, pv in results:
+    print("  %-45s p = %.6f" % (EN[zh], pv))
