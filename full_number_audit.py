@@ -15,8 +15,12 @@ from scipy.stats import fisher_exact
 from scipy.stats.contingency import odds_ratio
 import _dataprep as D
 
-MS   = "JPS_manuscript_draft_v2.md"
-SUPP = "Supplementary_Material.md"
+# 稿件与补充材料路径可由命令行传入，便于对不同投稿版本各跑一遍：
+#   python3 full_number_audit.py [稿件.md] [补充材料.md]
+# 注意：本脚本的多数检查是「从原始数据重算 vs 硬编码期望值」，与稿件文本无关；
+# 少数检查用正则在稿件里找特定措辞，换稿后若报缺失，需人工确认是措辞改变还是数字丢失。
+MS   = sys.argv[1] if len(sys.argv) > 1 else "JPS_manuscript_draft_v2.md"
+SUPP = sys.argv[2] if len(sys.argv) > 2 else "Supplementary_Material.md"
 ms   = io.open(MS, encoding="utf-8").read()
 supp = io.open(SUPP, encoding="utf-8").read()
 
@@ -102,7 +106,7 @@ print(f"  三层合计 {tot_band} vs 队列 {n_coh} → {'一致' if tot_band==n
 chk("Table 1 年龄行", "305 / 61 / 84",
     f"{band_counts['neo'][0]} / {band_counts['inf'][0]} / {band_counts['big'][0]}",
     (band_counts['neo'][0], band_counts['inf'][0], band_counts['big'][0]) == (305, 61, 84))
-chk("Table 3 分层分母", "142/163 · 42/19 · 71/13",
+chk("Table 4 分层分母", "142/163 · 42/19 · 71/13",
     f"{band_counts['neo'][1]}/{band_counts['neo'][2]} · "
     f"{band_counts['inf'][1]}/{band_counts['inf'][2]} · "
     f"{band_counts['big'][1]}/{band_counts['big'][2]}",
@@ -212,22 +216,22 @@ for (c, p), h in zip(raw, holm):
     print(f"    {c:<18} p={p:.4f}  Holm={h:.4f}")
 
 # ---------------------------------------------------------------- 7 总体率比较
-print("\n【7】总体再手术率比较（Table 4）")
+print("\n【7】总体再手术率比较（Table 3）")
 orv, lo, hi, p = fisher_or(reop_lap, n_lap, reop_opn, n_opn)
 print(f"  Crude lap vs open-related  OR {orv:.2f} ({lo:.2f}–{hi:.2f})  p={p:.4f}")
-chk("§3.4 + Table 4", "OR 1.58, exact 95% CI 0.74–3.6, p=0.22 / 0.224",
+chk("§3.4 + Table 3", "OR 1.58, exact 95% CI 0.74–3.6, p=0.22 / 0.224",
     f"OR {orv:.2f} ({lo:.2f}–{hi:.2f}) p={p:.4f}",
     abs(orv-1.58)<0.01 and abs(p-0.224)<0.001)
 orc, loc_, hic, pc = fisher_or(reop_conv, n_conv, reop_open, n_open)
 print(f"  中转 vs 纯开腹             OR {orc:.2f} ({loc_:.2f}–{hic:.2f})  p={pc:.4f}")
-chk("Table 4 异质性行", "11.3% vs 4.2%, 0.73–11.3, p=0.091",
+chk("Table 3 异质性行", "11.3% vs 4.2%, 0.73–11.3, p=0.091",
     f"{reop_conv/n_conv*100:.1f}% vs {reop_open/n_open*100:.1f}%, "
     f"{loc_:.2f}–{hic:.1f}, p={pc:.4f}",
     abs(pc-0.091)<0.002)
 itt_l = reop_lap + reop_conv; itt_nl = n_lap + n_conv
 oi, loi, hii, pi = fisher_or(itt_l, itt_nl, reop_open, n_open)
 print(f"  ITT（中转并入腹腔镜）      OR {oi:.2f} ({loi:.2f}–{hii:.2f})  p={pi:.4f}")
-chk("Table 4 ITT 行", "OR 2.45, 0.97–7.4, p=0.060",
+chk("Table 3 ITT 行", "OR 2.45, 0.97–7.4, p=0.060",
     f"OR {oi:.2f} ({loi:.2f}–{hii:.1f}) p={pi:.4f}",
     abs(oi-2.45)<0.01 and abs(pi-0.060)<0.002)
 
@@ -271,7 +275,7 @@ holm3 = [0]*3; prev = 0
 for rank, i in enumerate(order3):
     v = min(1.0, max(prev, (3-rank) * strata_p[i])); holm3[i] = v; prev = v
 print(f"\n  Holm across 3 strata（十二指肠）: neonate raw {strata_p[0]:.4f} → adj {holm3[0]:.4f}")
-chk("Table 3 脚注", "neonatal Holm adjusted p=0.029",
+chk("Table 4 脚注", "neonatal Holm adjusted p=0.029",
     f"{holm3[0]:.4f}", abs(holm3[0]-0.029)<0.002)
 
 # ---------------------------------------------------------------- 9 严重度/竞争事件
@@ -300,7 +304,7 @@ chk("§3.6 死亡", "16/163 (9.8%) versus none of 142",
 death_all_o = sum(1 for p in opn if p in died and p not in R)
 death_all_l = sum(1 for p in lap if p in died and p not in R)
 print(f"  全队列窗口内死亡 open {death_all_o}  lap {death_all_l}")
-chk("§3.5 + Table 4 脚注", "16 deaths versus none after laparoscopic completion",
+chk("§3.5 + Table 3 脚注", "16 deaths versus none after laparoscopic completion",
     f"open {death_all_o} vs lap {death_all_l}",
     death_all_o == 16 and death_all_l == 0)
 

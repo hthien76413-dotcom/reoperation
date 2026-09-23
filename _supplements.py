@@ -8,10 +8,14 @@
 来源：《17例丢失的再次手术病例原始临床资料.xlsx》——病案室调阅补录，按患儿分 sheet 存放原始文本。
 本模块按【住院号 + 手术日期】定位记录并解析，避免硬编码行号。
 """
-import re, openpyxl
+import os, re, openpyxl
 from datetime import datetime
 
-LOST17 = r"D:\全部肠旋转不良\③肠旋转不良术后再手术\17例丢失的再次手术病例原始临床资料.xlsx"
+_WIN_LOST17 = r"D:\全部肠旋转不良\③肠旋转不良术后再手术\17例丢失的再次手术病例原始临床资料.xlsx"
+_LOCAL_LOST17 = "17例丢失的再次手术病例原始临床资料.xlsx"
+# 与 _dataprep 同一套解析顺序：环境变量 > 工作目录 > 作者本机原路径。
+LOST17 = os.environ.get("MALROT_LOST17") or (
+    _LOCAL_LOST17 if os.path.exists(_LOCAL_LOST17) else _WIN_LOST17)
 
 # pid -> (sheet名, 住院号, 手术日期, 该记录是首台还是再手术)
 SUPP_SPEC = {

@@ -1,0 +1,92 @@
+=== 1. 引而未列 / 列而未引 ===
+  引用编号 25 个；文献表 25 条
+  引而未列: 无
+  列而未引: 无
+  编号连续性: 连续 1–25
+
+=== 2. 首现顺序（应为 1,2,3… 递增）===
+  第 1 个首现: [ 1]  行35   1. Introduction              [1,2,3]
+  第 2 个首现: [ 2]  行35   1. Introduction              [1,2,3]
+  第 3 个首现: [ 3]  行35   1. Introduction              [1,2,3]
+  第 4 个首现: [ 5]  行35   1. Introduction              [3,5,6,7]  ★首现顺序不符（期望 4）
+  第 5 个首现: [ 6]  行35   1. Introduction              [3,5,6,7]  ★首现顺序不符（期望 5）
+  第 6 个首现: [ 7]  行35   1. Introduction              [3,5,6,7]  ★首现顺序不符（期望 6）
+  第 7 个首现: [ 4]  行35   1. Introduction              [4,8,9]  ★首现顺序不符（期望 7）
+  第 8 个首现: [ 8]  行35   1. Introduction              [4,8,9]
+  第 9 个首现: [ 9]  行35   1. Introduction              [4,8,9]
+  第10 个首现: [10]  行37   1. Introduction              [10]
+  第11 个首现: [11]  行39   1. Introduction              [2,9,11]
+  第12 个首现: [12]  行39   1. Introduction              [12]
+  第13 个首现: [13]  行39   1. Introduction              [13]
+  第14 个首现: [23]  行41   1. Introduction              [23]  ★首现顺序不符（期望 14）
+  第15 个首现: [14]  行46   2.1 Design and setting       [14]  ★首现顺序不符（期望 15）
+  第16 个首现: [15]  行69   2.4 Blinded adjudication     [15]  ★首现顺序不符（期望 16）
+  第17 个首现: [19]  行74   2.5 Statistical analysis     [19]  ★首现顺序不符（期望 17）
+  第18 个首现: [16]  行74   2.5 Statistical analysis     [16]  ★首现顺序不符（期望 18）
+  第19 个首现: [17]  行74   2.5 Statistical analysis     [17]  ★首现顺序不符（期望 19）
+  第20 个首现: [18]  行74   2.5 Statistical analysis     [18]  ★首现顺序不符（期望 20）
+  第21 个首现: [20]  行74   2.5 Statistical analysis     [20]  ★首现顺序不符（期望 21）
+  第22 个首现: [21]  行121  4. Discussion                [21]  ★首现顺序不符（期望 22）
+  第23 个首现: [22]  行121  4. Discussion                [22]  ★首现顺序不符（期望 23）
+  第24 个首现: [24]  行123  4. Discussion                [24]
+  第25 个首现: [25]  行183  **Table 1.** Baseline charac [25]
+
+=== 3. 组内是否升序 ===
+  （无输出即全部升序且无重复）
+
+=== 4. 每条文献的被引位置 ===
+  [ 1] Nehra D, Goldstein AM. Intestinal malrotation: varied clinical present   被引 1 次: 行35/1. Introduction
+  [ 2] Catania VD, Lauriti G, Pierro A, Zani A. Open versus laparoscopic appr   被引 4 次: 行35/1. Introduction, 行39/1. Introduction, 行123/4. Discussion, 行127/4. Discussion
+  [ 3] Lang Y, Chen Q, Wu M, Chen G, Liu W, Yuan C. Laparoscopic vs open Ladd   被引 6 次: 行35/1. Introduction, 行35/1. Introduction, 行123/4. Discussion, 行125/4. Discussion, 行127/4. Discussion, 行127/4. Discussion
+  [ 4] Arnaud AP, Suply E, Eaton S, Blackburn SC, Giuliani S, Curry JI, et al   被引 1 次: 行35/1. Introduction
+  [ 5] Zhang Z, Chen Y, Yan J. Laparoscopic versus open Ladd's procedure for    被引 4 次: 行35/1. Introduction, 行123/4. Discussion, 行125/4. Discussion, 行127/4. Discussion
+  [ 6] Johnston WR, Hwang R, Mattei P. Laparoscopic versus open Ladd procedur   被引 4 次: 行35/1. Introduction, 行121/4. Discussion, 行125/4. Discussion, 行127/4. Discussion
+  [ 7] Duy HP, Manh HV, Tran NX, Yoshimura S, Okata Y. Risk factors for posto   被引 2 次: 行35/1. Introduction, 行125/4. Discussion
+  [ 8] El-Gohary Y, Alagtal M, Gillick J. Long-term complications following o   被引 2 次: 行35/1. Introduction, 行127/4. Discussion
+  [ 9] Salehi Karlslätt K, Husberg B, Ullberg U, Nordenskjöld A, Wester T. In   被引 4 次: 行35/1. Introduction, 行39/1. Introduction, 行125/4. Discussion, 行125/4. Discussion
+  [10] Eksarko P, Nazir S, Kessler E, LeBlanc P, Zeidman M, Asarian AP, et al   被引 1 次: 行37/1. Introduction
+  [11] Gomaa IA, Mirande MD, Armenia SJ, Aboelmaaty S, Dozois EJ, Perry WRG.    被引 2 次: 行39/1. Introduction, 行125/4. Discussion
+  [12] Xie W, Li Z, Wang Q, Wang L, Pan Y, Lu C. Laparoscopic vs open Ladd's    被引 1 次: 行39/1. Introduction
+  [13] Skertich NJ, Ingram MC, Grunvald M, Ritz E, Pillai S, Madonna MB, et a   被引 1 次: 行39/1. Introduction
+  [14] von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke J   被引 1 次: 行46/2.1 Design and s
+  [15] Byrt T, Bishop J, Carlin JB. Bias, prevalence and kappa. *J Clin Epide   被引 1 次: 行69/2.4 Blinded adju
+  [16] Holm S. A simple sequentially rejective multiple test procedure. *Scan   被引 1 次: 行74/2.5 Statistical 
+  [17] Aalen OO, Johansen S. An empirical transition matrix for non-homogeneo   被引 1 次: 行74/2.5 Statistical 
+  [18] Firth D. Bias reduction of maximum likelihood estimates. *Biometrika*.   被引 1 次: 行74/2.5 Statistical 
+  [19] Newcombe RG. Interval estimation for the difference between independen   被引 1 次: 行74/2.5 Statistical 
+  [20] VanderWeele TJ, Ding P. Sensitivity analysis in observational research   被引 2 次: 行74/2.5 Statistical , 行220/**Table 3.** Per
+  [21] Bass KD, Rothenberg SS, Chang JH. Laparoscopic Ladd's procedure in inf   被引 1 次: 行121/4. Discussion
+  [22] da Costa KM, Saxena AK. Laparoscopic Ladd procedure for malrotation in   被引 1 次: 行121/4. Discussion
+  [23] Zeng X, Lian N, Wang X, Du D. Abnormal anatomical landmarks: the guide   被引 2 次: 行41/1. Introduction, 行121/4. Discussion
+  [24] Takamoto N, Aso S, Konishi T, Fujiogi M, Kutsukake M, Yanagida Y, et a   被引 1 次: 行123/4. Discussion
+  [25] Austin PC. Balance diagnostics for comparing the distribution of basel   被引 1 次: 行183/**Table 1.** Bas
+
+=== 5. 全部引用点清单（供逐条比对论断）===
+  行35   1. Introduction            [1,2,3]      …The Ladd procedure is the standard operation for intestinal malrotation, performed both open and laparoscopically
+  行35   1. Introduction            [3,5,6,7]    …lower risk of adhesive obstruction has been debated for two decades, and the most recent series and meta-analyses still disagree
+  行35   1. Introduction            [4,8,9]      …ecent series and meta-analyses still disagree [3,5,6,7]. Most reported morbidity, however, concerns events beyond the first weeks
+  行37   1. Introduction            [10]         …ivision of Ladd bands, adhesion forming around the mobilized duodenum, or an unrecognized intrinsic lesion such as a duodenal web
+  行39   1. Introduction            [2,9,11]     …other way: older children, operated electively for chronic or intermittent symptoms, are preferentially operated laparoscopically
+  行39   1. Introduction            [12]         …re preferentially operated laparoscopically [2,9,11]. Propensity-score analyses have either been confined to neonates and infants
+  行39   1. Introduction            [13]         …s [12] or treated age as one covariate among many; conversion, itself predicted by age and severity, blurs the comparison further
+  行41   1. Introduction            [23]         …Recent work has begun to define anatomical landmarks confirming that each step of a neonatal laparoscopic Ladd has been completed
+  行46   2.1 Design and setting     [14]         …Single-center retrospective cohort study at Wuhan Children’s Hospital, a tertiary hospital, reported per STROBE
+  行69   2.4 Blinded adjudication   [15]         …Agreement was quantified with Cohen’s κ and, for rare binary outcomes, PABAK
+  行74   2.5 Statistical analysis   [19]         …e intervals for proportions, conditional exact (Cornfield) intervals for odds ratios, and Newcombe intervals for risk differences
+  行74   2.5 Statistical analysis   [16]         …tional exact (Cornfield) intervals for odds ratios, and Newcombe intervals for risk differences [19]. Holm’s step-down correction
+  行74   2.5 Statistical analysis   [17]         …d because the choice changes the conclusion (Table 3). Cumulative incidence functions were estimated by the Aalen–Johansen method
+  行74   2.5 Statistical analysis   [18]         …nt, and cause-specific Cox regression was fitted censoring at the competing event. Firth penalized-likelihood logistic regression
+  行74   2.5 Statistical analysis   [20]         …ort definitions—are listed in Supplementary Table S5 and reported in Table 4. E-values were computed for the neonatal association
+  行121  4. Discussion              [21]         …base are demanding maneuvers laparoscopically. Laparoscopic Ladd has been feasible in selected neonates since the earliest series
+  行121  4. Discussion              [22]         …le in selected neonates since the earliest series [21], yet a pooled analysis still reports 11% conversion and 10% reintervention
+  行121  4. Discussion              [6]          …n [22], and an independent series attributed four laparoscopic reoperations to duodenal stricture or kink from an incomplete Ladd
+  行121  4. Discussion              [23]         …Zeng and colleagues responded by defining anatomical landmarks confirming completion of each step of a neonatal laparoscopic Ladd
+  行123  4. Discussion              [2,3,5]      …counter to expectation. Laparoscopy is generally credited with causing fewer adhesions, part of the case for a laparoscopic Ladd
+  行123  4. Discussion              [24]         …ble: an adhesion barrier reduced rehospitalization for small-bowel obstruction without increasing reoperation for midgut volvulus
+  行125  4. Discussion              [3,5,6,7,9]  …hesive, with no technical deficiency. We found no comparable early adhesive-reoperation rate for older children in the literature
+  行125  4. Discussion              [9,11]       …estimate is imprecise, but it points to a property of operating on a long-standing malrotation rather than of the instrument used
+  行127  4. Discussion              [2,3,5,8]    …es. Our 8.0% is not directly comparable with published series, which report composite or late morbidity in the single-digit range
+  行127  4. Discussion              [3]          …r late morbidity in the single-digit range [2,3,5,8]. A 2026 meta-analysis reported more reoperations after laparoscopy (OR 1.67)
+  行127  4. Discussion              [6]          …s after laparoscopy (OR 1.67) [3], which we did not reproduce overall; a 2024 comparison reached the same null conclusion as ours
+  行183  **Table 1.** Baseline char [25]         …\* Standardized mean difference (laparoscopic completion minus open-related); |SMD| ≥ 0.10 in bold
+  行220  **Table 3.** Persistent du [20]         …th both approach and outcome by a risk ratio of at least 2.10 (E-value for the exact lower bound of 1.38) to move that bound to 1

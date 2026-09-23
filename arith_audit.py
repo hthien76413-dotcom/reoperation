@@ -6,11 +6,11 @@
   B 所有分母是否属于本队列的合法分母集合（450/255/195/142/163/71/13/…）
   C 关键计数的加总：病因六类合计=再手术数；三个年龄段合计=队列数
 """
-import io, re, sys
+import io, sys, re, sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 import _dataprep as D
 
-MS = "JPS_manuscript_draft_v2.md"
+MS = sys.argv[1] if len(sys.argv) > 1 else "JPS_manuscript_draft_v2.md"
 t = io.open(MS, encoding="utf-8").read()
 
 d = D.load(); coh = set(d["malrot"]); first = d["first"]
@@ -30,6 +30,13 @@ for b in ("neo", "inf", "big"):
     legit |= {len(g), sum(1 for p in g if ap[p] == L), sum(1 for p in g if ap[p] != L)}
 legit |= {sum(1 for p in R if ap[p] == L), sum(1 for p in R if ap[p] != L)}
 legit |= {20, 430, 53, 161, 132, 128, 99, 226, 90, 136, 121, 19, 18, 16, 12, 9, 6, 3, 4, 2, 1}  # 文献引用与裁定计数
+
+# 性别（§3.8）：队列/两术式臂 各按男女拆分
+sex = d["sex"]
+MALE = "男性"
+for grp in (coh, {p for p in coh if ap[p] == L}, {p for p in coh if ap[p] != L}):
+    legit |= {sum(1 for p in grp if sex.get(p) == MALE),
+              sum(1 for p in grp if sex.get(p) != MALE)}
 
 bad_pct, bad_den = [], []
 for m in re.finditer(r"(\d+)\s*/\s*(\d+)\s*\((\d+(?:\.\d+)?)%\)", t):

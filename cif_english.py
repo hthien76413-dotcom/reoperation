@@ -97,6 +97,9 @@ for g in ["Laparoscopic", "Open-related"]:
     top = max(top, hi.max())
     ax.step(grid, point, where="post", color=colors[g], lw=2.0, zorder=3,
             label=f"{LABEL[g]} (n={n})")
+    # 保留 alpha：两条置信带在中段重叠，透明混色才能同时看见两条带的边界；
+    # 改成实色会让后画的那条整块遮住前一条。故 S1 不走 EPS（EPS 不支持透明），
+    # 改以 600 dpi TIFF 投稿——该刊对 combination art 的下限即 600 dpi。
     ax.fill_between(grid, lo, hi, step="post", color=colors[g], alpha=0.16,
                     linewidth=0, zorder=2)
 
@@ -105,11 +108,10 @@ ax.yaxis.set_major_formatter(lambda v, _: f"{v:g}%")
 ax.set_xlabel("Days after index operation", fontsize=9.4, color=INK2, labelpad=6)
 ax.set_ylabel("Cumulative incidence of unplanned reoperation (%)",
               fontsize=9.4, color=INK2, labelpad=6)
-ax.set_title("Competing-risk cumulative incidence of unplanned early reoperation",
-             fontsize=11.0, color=INK, fontweight="bold", loc="left", pad=26)
-ax.text(0, 1.015, "Confirmed death treated as the competing event; "
-                  "shaded areas are 95% bootstrap bands.",
-        transform=ax.transAxes, fontsize=8.6, color=MUTED, va="bottom")
+# Ped Surg Int：图内不得含标题或图注（Artwork Guidelines）。原标题
+# 「Competing-risk cumulative incidence of unplanned early reoperation」与副标题
+# 「Confirmed death treated as the competing event; shaded areas are 95% bootstrap
+# bands.」的内容，均已完整见于补充材料 Figure S1 的图注，故此处删除不丢信息。
 ax.legend(frameon=False, loc="upper left", fontsize=9.2, labelcolor=INK)
 ax.grid(axis="y", color=GRID, lw=0.8, zorder=0); ax.set_axisbelow(True)
 ax.tick_params(colors=MUTED, labelsize=8.8, length=0)
@@ -117,8 +119,14 @@ ax.spines[["top", "right"]].set_visible(False)
 for sp in ("left", "bottom"):
     ax.spines[sp].set_color(AXIS); ax.spines[sp].set_linewidth(0.9)
 fig.tight_layout()
-fig.savefig("FigureS1_CIF_reoperation_EN.png", dpi=300, facecolor=SURFACE)
-fig.savefig("FigureS1_CIF_reoperation_EN.pdf", facecolor=SURFACE)  # 矢量版备投稿
+# 2026-08-14：升级到 matplotlib 3.11 后，左对齐加粗标题的度量变化导致标题右侧被裁
+# （旧版 matplotlib 下不裁）。bbox_inches="tight" 让画布按实际渲染范围外扩，
+# 不改变坐标轴、曲线或数据，只是不再裁切标题/图例的溢出部分。
+# dpi=600：本图为 combination art（曲线+文字+色块），Ped Surg Int 对该类图的下限
+# 即 600 dpi。因置信带用 alpha 透明、无法安全转 EPS，本图以位图 TIFF 投稿，
+# 故 PNG 须先按 600 dpi 出图（make_submission_figures.py 据此转 TIFF）。
+fig.savefig("FigureS1_CIF_reoperation_EN.png", dpi=600, facecolor=SURFACE, bbox_inches="tight")
+fig.savefig("FigureS1_CIF_reoperation_EN.pdf", facecolor=SURFACE, bbox_inches="tight")  # 矢量版备投稿
 
 # 报数：42 天 CIF 点估计
 for g in ["Laparoscopic", "Open-related"]:

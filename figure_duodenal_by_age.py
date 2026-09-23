@@ -83,8 +83,9 @@ axA.text(7.5, -0.52, "%d neonates" % len(NEO), ha="center",
 axA.text(2700, -0.52, "%d children aged %.1f–%.1f y"
          % (len(OLD), GAP_HI / 365.25, max(OLD) / 365.25),
          ha="center", fontsize=9.0, color=INK, fontweight="bold")
-axA.set_title("A  Every case of persistent duodenal obstruction (n=%d)" % len(cases),
-              fontsize=10.2, color=INK, fontweight="bold", loc="left", pad=10)
+# Ped Surg Int：图内不得含标题/图注（Artwork Guidelines），分图仅以小写字母标识。
+# 原标题文字「Every case of persistent duodenal obstruction (n=12)」已在正文图注中。
+axA.set_title("a", fontsize=11.0, color=INK, fontweight="bold", loc="left", pad=10)
 
 # ---------------- Panel B：分层率 ----------------
 LABEL = ["Neonate\n(<28 days)", "28 days –\n1 year", "≥1 year"]
@@ -118,8 +119,7 @@ axB.xaxis.set_major_formatter(lambda v, _: f"{v:g}%")
 axB.grid(axis="x", color=GRID, lw=0.8, zorder=0)
 axB.set_xlabel("Reoperation for persistent duodenal obstruction,\nper 100 children in that age stratum",
                fontsize=9.2, color=INK2, labelpad=7)
-axB.set_title("B  Rate by age stratum and index approach",
-              fontsize=10.2, color=INK, fontweight="bold", loc="left", pad=10)
+axB.set_title("b", fontsize=11.0, color=INK, fontweight="bold", loc="left", pad=10)
 
 fig.legend(handles=[Patch(facecolor=C_LAP, label="Laparoscopic completion"),
                     Patch(facecolor=C_OPR, label="Open-related")],
@@ -131,17 +131,20 @@ _o_lo = AGE_BANDS[2][1]
 _o_all = [p for p in malrot if AGED.get(p) is not None and AGED[p] >= _o_lo]
 PCT_LAP_OLD = sum(1 for p in _o_all if is_lap(p)) / len(_o_all) * 100
 
-fig.text(0.010, 0.062,
-         "The excess after laparoscopy is confined to neonates, where the two arms are of comparable size. No open-related child had this",
-         fontsize=8.0, color=MUTED)
-fig.text(0.010, 0.022,
-         "outcome in any stratum, so no odds ratio is estimable; %.0f%% of children aged ≥1 year underwent laparoscopy, so that stratum "
-         "carries little information about approach." % PCT_LAP_OLD,
-         fontsize=8.0, color=MUTED)
+# Ped Surg Int：图内不得含图注。原底部两行说明（阳性结果限于新生儿层、
+# 无开腹相关病例故 OR 不可估、≥1 岁层 85% 走腹腔镜故信息量有限）的内容
+# 均已见于正文 Figure 2 图注与 §3.1／Table 3 脚注，故删除不丢信息；
+# 下方留白相应收窄（原 bottom=0.255 是为这两行预留的）。
 
-fig.subplots_adjust(left=0.055, right=0.985, top=0.845, bottom=0.255)
-fig.savefig("Figure2_duodenal_by_age.png", dpi=300, facecolor=SURFACE)
+fig.subplots_adjust(left=0.055, right=0.985, top=0.845, bottom=0.165)
+fig.savefig("Figure2_duodenal_by_age.png", dpi=600, facecolor=SURFACE)
 fig.savefig("Figure2_duodenal_by_age.pdf", facecolor=SURFACE)
+# ps.fonttype=42 让 TrueType 字体嵌入 EPS，满足官方「Vector graphics containing
+# fonts must have the fonts embedded」。必须放在 PDF 保存【之后】：本机 matplotlib
+# 在该参数生效时写 PDF 会抛 ValueError: bytes must be in range(0, 256)
+# （字体子集化的共用代码路径所致），只影响 PDF，不影响 EPS 本身。
+matplotlib.rcParams["ps.fonttype"] = 42
+fig.savefig("Figure2_duodenal_by_age.eps", facecolor=SURFACE)   # 矢量投稿版
 print("saved Figure2_duodenal_by_age.png / .pdf")
 for (nm, _, _), (a, na, c, nc) in zip(AGE_BANDS, rows):
     print("  %-20s lap %d/%-4d = %4.1f%%   open-related %d/%-4d = %4.1f%%"

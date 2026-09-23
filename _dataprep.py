@@ -2,12 +2,26 @@
 """共享数据加载：从原始数据库重建 466 例队列、术式分组、结局与竞争事件。
 逻辑复刻自 strengthen.py，仅将路径改到 D 盘、并补充性别/年龄/肠切除字段供基线表使用。
 被 baseline_table.py / cif_english.py / flow_figure.py 复用。"""
+import os
 import openpyxl
 from collections import defaultdict
 from datetime import datetime
 
-SRC = r"D:\全部肠旋转不良\全部肠旋转不良数据.xlsx"
-ADJ = r"D:\全部肠旋转不良\③肠旋转不良术后再手术\裁定表.xlsx"
+# 路径解析顺序：环境变量 > 当前工作目录下的同名文件 > 作者本机 Windows 原路径。
+# 这样脚本在仓库根目录直接可跑，也不影响作者本机的既有用法。
+_WIN_SRC = r"D:\全部肠旋转不良\全部肠旋转不良数据.xlsx"
+_WIN_ADJ = r"D:\全部肠旋转不良\③肠旋转不良术后再手术\裁定表.xlsx"
+
+
+def _resolve(env, local, win):
+    p = os.environ.get(env)
+    if p:
+        return p
+    return local if os.path.exists(local) else win
+
+
+SRC = _resolve("MALROT_SRC", "全部肠旋转不良数据.xlsx", _WIN_SRC)
+ADJ = _resolve("MALROT_ADJ", "裁定表.xlsx", _WIN_ADJ)
 
 # ---------------------------------------------------------------------------
 # 再手术病例名单：一律来自双评者盲法裁定表 Sheet A（是否纳入=='纳入'）。
