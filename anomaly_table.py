@@ -8,12 +8,13 @@
  2) 修复子串误计：'十二指肠闭锁' 含子串 '肠闭锁'，曾使 6 例在 gi_other 被重复计数。
     现在检索 gi_other 前先屏蔽十二指肠类词条。
 """
-import io, math, openpyxl
+import io, math, os, openpyxl
 from collections import defaultdict
 from _dataprep import load, approach
 from baseline_table import fisher_2x2
+import _dataprep
 
-SRC = r"D:\全部肠旋转不良\全部肠旋转不良数据.xlsx"
+SRC = _dataprep.SRC
 D = load()
 malrot, first = D["malrot"], D["first"]
 LAP = [p for p in malrot if approach(first[p]) == "腹腔镜完成"]

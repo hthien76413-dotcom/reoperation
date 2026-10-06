@@ -19,11 +19,16 @@ kappa_6cat_report.txt）统一重算成一张投稿用表，避免手工誊抄�
 import io, math, re, openpyxl
 import numpy as np
 
+import os
+
 DIR = r"D:\全部肠旋转不良\③肠旋转不良术后再手术"
+def _resolve(name):
+    return name if os.path.exists(name) else os.path.join(DIR, name)
 
 # 标题从主稿实时读取，不再硬编码——2026-07-26 已因硬编码漂了两次
 # （第一次残留 v1 旧标题，第二次没跟上 S5 的限定）。
-def _ms_title(path=DIR + r"\JPS_manuscript_draft_v2.md"):
+def _ms_title(path=None):
+    path = path or _resolve("JPS_manuscript_draft_v2.md")
     m = re.search(r"^\*\*Title:\*\*\s*(.+)$", io.open(path, encoding="utf-8").read(), re.M)
     if not m:
         raise SystemExit("未能从主稿读到标题，请检查 JPS_manuscript_draft_v2.md")
@@ -36,8 +41,8 @@ from _dataprep import load as _load
 from _dataprep import reop_in_cohort as _reop_in_cohort, adjudicated as _adjudicated
 N_COHORT = len(_load()["malrot"])
 
-R1, R2 = DIR + r"\裁定表_评者1.xlsx", DIR + r"\裁定表_评者2.xlsx"
-MAIN = DIR + r"\裁定表.xlsx"
+R1, R2 = _resolve("裁定表_评者1.xlsx"), _resolve("裁定表_评者2.xlsx")
+MAIN = _resolve("裁定表.xlsx")
 SA, SB = "A_结局裁定", "B_术式与严重度_池"
 
 
@@ -168,8 +173,8 @@ va, vn = algo_vs_consensus()
 # ---------------- Pass 3：机制核阅（第二评者盲评，2026-07-26 完成） ----------------
 def mechanism():
     """读盲评本 + 答案键，对齐两位评者对 14 例十二指肠梗阻机制的判读。"""
-    b = openpyxl.load_workbook(DIR + r"\机制核阅_盲法_评者2.xlsx", data_only=True)["2_盲法核阅"]
-    k = openpyxl.load_workbook(DIR + r"\机制核阅_盲法_答案键.xlsx", data_only=True)["答案键_评分前勿开"]
+    b = openpyxl.load_workbook(_resolve("机制核阅_盲法_评者2.xlsx"), data_only=True)["2_盲法核阅"]
+    k = openpyxl.load_workbook(_resolve("机制核阅_盲法_答案键.xlsx"), data_only=True)["答案键_评分前勿开"]
     r2 = {s(b.cell(r, 1).value).upper(): s(b.cell(r, 4).value).upper()
           for r in range(2, b.max_row + 1) if s(b.cell(r, 1).value)}
     r1 = {s(k.cell(r, 1).value).upper(): s(k.cell(r, 4).value).upper()

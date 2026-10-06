@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 """参考文献机械核对：引用位置、编号连续性、首现顺序、引而未列/列而未引、组内升序。
 只读，不改稿。"""
-import io, re, sys
+import io, os, re, sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-P = r"D:\全部肠旋转不良\③肠旋转不良术后再手术\JPS_manuscript_draft_v2.md"
+_WIN = r"D:\全部肠旋转不良\③肠旋转不良术后再手术\JPS_manuscript_draft_v2.md"
+P = sys.argv[1] if len(sys.argv) > 1 else (
+    "JPS_manuscript_draft_v2.md" if os.path.exists("JPS_manuscript_draft_v2.md") else _WIN)
 txt = io.open(P, encoding="utf-8").read()
 # 2026-07-27 起 References 已前置于 Tables，故不能再按"末尾"切；
 # 取 ## References 到下一个顶级标题之间作为文献表，其余全部算正文（表注/图注里的引用要计入）。

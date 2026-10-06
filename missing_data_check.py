@@ -2,6 +2,7 @@
 """逐变量核查 466 例队列中每个入稿变量的缺失/不可判定情况，
 给 Methods 2.5 / Limitations 的缺失数据声明提供实测依据（而非估计）。"""
 import io
+import _dataprep
 from _dataprep import load, approach, reop_set
 from datetime import datetime
 
@@ -48,7 +49,7 @@ log(f"[竞争风险] 死亡/放弃者中缺出院日期（因而按90天行政�
 # 6) 坏死/畸形关键词抽取依赖的诊断文本（出院记录+病理诊断）是否完全为空
 import openpyxl
 from collections import defaultdict
-wb = openpyxl.load_workbook(r"D:\全部肠旋转不良\全部肠旋转不良数据.xlsx", read_only=True, data_only=True)
+wb = openpyxl.load_workbook(_dataprep.SRC, read_only=True, data_only=True)
 dx = defaultdict(str)
 ws = wb["住院病历出院记录"]
 for r in ws.iter_rows(min_row=2, values_only=True):
